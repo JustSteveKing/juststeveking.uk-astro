@@ -7,6 +7,7 @@ import alpinejs from "@astrojs/alpinejs";
 import serviceWorker from "astrojs-service-worker";
 import webmanifest from 'astro-webmanifest';
 import compressor from "astro-compressor";
+import robotsTxt from 'astro-robots-txt';
 
 import {
   SITE_DESCRIPTION,
@@ -15,7 +16,7 @@ import {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://juststeveking-uk-astro.pages.dev/',
   integrations: [
     mdx(),
     sitemap(),
@@ -24,10 +25,12 @@ export default defineConfig({
     alpinejs(),
     compressor(),
     serviceWorker(),
+    robotsTxt(),
     webmanifest({
       name: SITE_TITLE,
       description: SITE_DESCRIPTION,
       start_url: '/',
+      icon: `${Astro.site}favicon.svg`,
       display: 'standalone',
       theme_color: '#2dd4bf',
       background_color: '#fafafa'

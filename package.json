@@ -27,6 +27,7 @@
     "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
+    "astro-robots-txt": "^0.3.9",
     "astro-webmanifest": "^0.4.1"
   }
 }
