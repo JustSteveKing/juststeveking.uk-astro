@@ -1,14 +1,89 @@
 ---
+import { Fathom } from 'astro-analytics';
+import { Schema } from "astro-seo-schema"
+
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import { 
+    SITE_TITLE,
+    SITE_DESCRIPTION,
+    FATHOM_SITE,
+    SCHEMA_NAME,
+    SCHEMA_URL,
+    LINK_GITHUB,
+    LINK_LINKEDIN,
+    LINK_TWITTER,
+    LINK_YOUTUBE,
+    WORK_TITLE,
+    WORK_PLACE,
+    WORK_URL,
+    WORK_FOUNDED,
+    WORK_LINKEDIN,
+    WORK_FACEBOOK,
+    WORK_INSTAGRAM,
+    WORK_TWITTER,
+WORK_DESCRIPTION,
+} from '../config';
 ---
 
 <html lang="en" class="h-full antialiased">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+            title={SITE_TITLE}
+            description={SITE_DESCRIPTION}
+        />
+
+        <script type="module">
+            document.documentElement.classList.remove('no-js');
+            document.documentElement.classList.add('js');
+        </script>
+
+        <Schema
+            item={{
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: SCHEMA_NAME,
+                givenName: 'Steve',
+                familyName: 'McDougall',
+                gender: 'Male',
+                url: SCHEMA_URL,
+                image: `${Astro.site}images/avatar.webp`,
+                sameAs: [
+                    LINK_GITHUB,
+                    LINK_TWITTER,
+                    LINK_LINKEDIN,
+                    LINK_YOUTUBE,
+                ],
+                jobTitle: WORK_TITLE,
+                worksFor: {
+                    '@type': 'Organization',
+                    name: WORK_PLACE,
+                    url: WORK_URL,
+                    foundingDate: WORK_FOUNDED,
+                    sameAs: [
+                        WORK_LINKEDIN,
+                        WORK_FACEBOOK,
+                        WORK_INSTAGRAM,
+                        WORK_TWITTER,
+                    ],
+                    description: WORK_DESCRIPTION,
+                },
+                knowsAbout: [
+                    'PHP',
+                    'Laravel',
+                    'Software Engineering',
+                    'Software Architecture',
+                    'Software Engineering Management'
+                ],
+            }}
+        />
+
+        <Fathom
+            site={FATHOM_SITE}
+            src="https://cdn.usefathom.com/script.js"
+        />
 	</head>
 
 	<body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
