@@ -161,9 +161,9 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                             </span>
                                         </a>
                                     </h2>
-                                    <time class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" datetime={post.frontmatter.pubDate}>
+                                    <time class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5" datetime={post.frontmatter.pubDate}>
                                         <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                                            <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                                            <span class="h-4 w-0.5 rounded-full bg-zinc-100 dark:bg-zinc-500"></span>
                                         </span>
                                         {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
                                             year: 'numeric',
