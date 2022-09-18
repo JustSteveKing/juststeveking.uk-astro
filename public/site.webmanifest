@@ -1,0 +1,21 @@
+{
+    "name": "JustSteveKing",
+    "short_name": "JustSteveKing",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#2dd4bf",
+    "background_color": "#fafafa",
+    "description": "Steve is an experienced CTO with scaling products and development teams. He is a massive advocate for the PHP language, community organiser, open source enthusiast and conference organiser.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
