@@ -1,5 +1,4 @@
 ---
-import { Fathom } from 'astro-analytics';
 import { Schema } from "astro-seo-schema"
 
 import BaseHead from "../components/BaseHead.astro";
@@ -80,10 +79,12 @@ WORK_DESCRIPTION,
             }}
         />
 
-        <Fathom
-            site={FATHOM_SITE}
+        <script
+            type="text/partytown"
             src="https://cdn.usefathom.com/script.js"
-        />
+            data-site={FATHOM_SITE}
+            defer
+        ></script>
 
         <style>
             [x-cloak] {display: none !important;}
@@ -94,7 +95,7 @@ WORK_DESCRIPTION,
         <div class="fixed inset-0 flex justify-center sm:px-8"><div class="flex w-full max-w-7xl lg:px-8"><div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div></div></div>
 
         <section class="relative">
-            <Header client:load />
+            <Header />
             
             <main>
                 <slot />
@@ -105,10 +106,12 @@ WORK_DESCRIPTION,
 
         <script>
             import Alpine from 'alpinejs';
-        
-          
             window.Alpine = Alpine;
             Alpine.start();
-          </script>
+
+            function track(code, value) {
+                window.fathom.trackGoal(code, value);
+            };
+        </script>
     </body>
 </html>
