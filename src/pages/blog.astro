@@ -1,6 +1,8 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 
+import Link from "../components/Link.astro";
+
 const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 );
@@ -13,10 +15,13 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                 <div class="mx-auto max-w-2xl lg:max-w-5xl">
                     <header class="max-w-2xl">
                         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                            Writing on software design, company building, and the aerospace industry.
+                            Writing on software engineering, mostly tutorials.
                         </h1>
                         <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                            All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.
+                            I write a lot of tutorials, in the aims that others can learn from my experience. It is also a great way to document how you approach common problems, so that you have a point of reference.
+                        </p>
+                        <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                            Some of these are links through to <span class="text-laravel-news">Laravel News</span> where they are articles that I have written there.
                         </p>
                     </header>
                     <div class="mt-16 sm:mt-20">
@@ -27,12 +32,26 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                         <div class="md:col-span-3 group relative flex flex-col items-start">
                                             <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                                                 <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                                <a href={post.url}>
-                                                    <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                                    <span class="relative z-10">
-                                                        {post.frontmatter.title}
-                                                    </span>
-                                                </a>
+                                                {post.frontmatter.partner
+                                                    ?
+                                                        <Link
+                                                            link={post.frontmatter.source}
+                                                            title={post.frontmatter.title}
+                                                            style=" "
+                                                        >
+                                                            <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                                                            <span class="relative z-10">
+                                                                {post.frontmatter.title}
+                                                            </span>
+                                                        </Link>
+                                                    :
+                                                        <a href={post.url}>
+                                                            <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                                                            <span class="relative z-10">
+                                                                {post.frontmatter.title}
+                                                            </span>
+                                                        </a>
+                                                }
                                             </h2>
                                             <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" datetime={post.frontmatter.pubDate}>
                                                 <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
@@ -45,16 +64,21 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                                 })}
                                             </time>
                                             <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                                                Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
+                                                {post.frontmatter.description}
                                             </p>
                                             <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
-                                                Read article
+                                                {post.frontmatter.partner
+                                                    ?
+                                                        'Read article on Laravel News'∏
+                                                    :
+                                                        'Read article'
+                                                }
                                                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                                                     <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </div>
-                                        <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" datetime={post.frontmatter.pubDate}>
+                                        <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500" datetime={post.frontmatter.pubDate}>
                                             {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
                                                 year: 'numeric',
                                                 month: 'short',
