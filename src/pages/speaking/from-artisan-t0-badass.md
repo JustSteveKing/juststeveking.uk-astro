@@ -1,5 +1,4 @@
 ---
-section: content
 title: From Artisan to Badass
 date: 2022-02-09T11:59:40.513Z
 description: >-

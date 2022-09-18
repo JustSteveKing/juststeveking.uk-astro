@@ -1,5 +1,4 @@
 ---
-section: content
 title: Maintaining the Chaos, automate your code quality
 date: 2019-07-23T11:59:40.513Z
 description: >-

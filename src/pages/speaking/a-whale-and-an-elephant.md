@@ -1,5 +1,4 @@
 ---
-section: content
 title: A Whale and an Elephant
 date: 2019-06-07T11:59:40.513Z
 description: >-

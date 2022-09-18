@@ -1,5 +1,4 @@
 ---
-section: content
 title: Learn PHP - the basics
 date: 2020-03-09T11:59:40.513Z
 description: >-

@@ -1,5 +1,4 @@
 ---
-section: content
 title: Working with third party services in Laravel
 date: 2021-03-02T11:59:40.513Z
 description: >-

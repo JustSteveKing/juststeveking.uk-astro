@@ -1,5 +1,4 @@
 ---
-section: content
 title: How to do API integrations in Laravel
 date: 2022-02-09T11:59:40.513Z
 description: >-
