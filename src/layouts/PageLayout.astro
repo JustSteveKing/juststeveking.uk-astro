@@ -109,6 +109,51 @@ WORK_DESCRIPTION,
             window.Alpine = Alpine;
             Alpine.start();
 
+            let prefetched = new Set();
+
+            const intersectionOpts = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 1.0,
+            };
+
+            if ('IntersectionObserver' in window) {
+                let observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        const url = entry.target.getAttribute('href');
+
+                        if (prefetched.has(url)) {
+                            observer.unobserve(entry.target);
+                            return;
+                        }
+
+                        if (entry.isIntersecting) {
+                            const linkEl = document.createElement('link');
+                            linkEl.rel = 'prefetch';
+                            linkEl.href = url;
+                            linkEl.as = 'document';
+
+                            linkEl.onload = () => console.log('🌩️ prefetched', url);
+                            linkEl.onerror = (err) => console.log('🤕 can\'t prefetch', url, err);
+
+                            document.head.appendChild(linkEl);
+
+                            // Keep track of prefetched links
+                            prefetched.add(url);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, intersectionOpts);
+
+                Array.from(document.links).filter(
+                (node) =>
+                    node.href.includes(document.location.origin) && // on origin url
+                    !node.href.includes('#') && // not an id anchor
+                    node.href !== (document.location.href || document.location.href + '/') && // not current page
+                    !prefetched.has(node.href), // not already prefetched
+                ).forEach((node) => observer.observe(node));
+            }
+
             function track(code, value) {
                 window.fathom.trackGoal(code, value);
             };
