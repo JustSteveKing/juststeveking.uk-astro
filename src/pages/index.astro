@@ -35,9 +35,9 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                 <div class="mx-auto max-w-2xl lg:max-w-5xl">
                     <div class="max-w-2xl">
                         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                            Consultant, Software Engineer, Educator, Writer, and Community Advocate.
+                            Consultant, Software Engineer, Technical Writer, and Community Advocate.
                         </h1>
-                        <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                        <p class="my-6 text-lg text-zinc-600 dark:text-zinc-400">
                             👋 Hey there, I'm Steve, but you may know me better as <Link title="Follow me on Twitter" link={LINK_TWITTER} id="CZEGD7I0" value={0}>@JustSteveKing</Link> . I currently live in the Welsh Valleys, about 40 minutes north of Cardiff, with my wife and kids.
                             I work as a {WORK_TITLE} for a company called <Link title={WORK_PLACE} link={WORK_URL}>{WORK_PLACE}</Link>, {WORK_DESCRIPTION}.
                         </p>
@@ -103,7 +103,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 
     <div class="mt-16 sm:mt-20">
         <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
+            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg">
                 <Image
                     src={docker}
                     width={640}
@@ -113,7 +113,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                     class="absolute inset-0 h-full w-full object-cover"
                 />
             </div>
-            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
+            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2 hover:shadow-lg">
                 <Image
                     src={livewire}
                     width={640}
@@ -123,7 +123,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                     class="absolute inset-0 h-full w-full object-cover"
                 />
             </div>
-            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
+            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg">
                 <Image
                     src={laravel}
                     width={640}
@@ -133,7 +133,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                     class="absolute inset-0 h-full w-full object-cover"
                 />
             </div>
-            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
+            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg">
                 <Image
                     src={php}
                     width={640}
@@ -143,7 +143,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                     class="absolute inset-0 h-full w-full object-cover"
                 />
             </div>
-            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
+            <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2 hover:shadow-lg">
                 <Image
                     src={go}
                     width={640}
@@ -161,10 +161,12 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
             <div class="relative px-4 sm:px-8 lg:px-12">
                 <div class="mx-auto max-w-2xl lg:max-w-5xl">
                     <div class="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+                        
+                        <!-- Latest Articles -->
                         <div class="flex flex-col gap-16">
                             {posts.map((post) => (
                                 <article class="group relative flex flex-col items-start">
-                                    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                    <h2 class="text-lg font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                                         <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                                         
                                         {post.frontmatter.partner
@@ -172,7 +174,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                                 <Link
                                                     link={post.frontmatter.source}
                                                     title={post.frontmatter.title}
-                                                    style=" "
+                                                    style="text-lg group-hover:text-teal-500"
                                                 >
                                                     <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                                                     <span class="relative z-10">
@@ -182,15 +184,15 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                             :
                                                 <a href={post.frontmatter.url}>
                                                     <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                                    <span class="relative z-10">
+                                                    <span class="relative z-10 text-lg group-hover:text-teal-500">
                                                         {post.frontmatter.title}
                                                     </span>
                                                 </a>
                                         }
                                     </h2>
-                                    <time class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5" datetime={post.frontmatter.pubDate}>
+                                    <time class="relative z-10 order-first mb-3 flex items-center text-md text-zinc-500 pl-3.5" datetime={post.frontmatter.pubDate}>
                                         <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                                            <span class="h-4 w-0.5 rounded-full bg-zinc-100 dark:bg-zinc-500"></span>
+                                            <span class="h-4 w-1 rounded-full bg-teal-500 dark:bg-zinc-500"></span>
                                         </span>
                                         {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
                                             year: 'numeric',
@@ -198,10 +200,10 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                             day: 'numeric',
                                         })}
                                     </time>
-                                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                                    <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-400">
                                         { post.frontmatter.description}
                                     </p>
-                                    <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                                    <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-md font-medium text-teal-500">
                                         {post.frontmatter.partner ? 'Read article on Laravel News' : 'Read article' }
                                         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                                             <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -210,14 +212,15 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                 </article>
                             ))}
                         </div>
+                        <!-- Where I Work -->
                         <div class="space-y-10 lg:pl-16 xl:pl-24">
                             <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-                                <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                                <h2 class="flex text-md font-semibold text-zinc-900 dark:text-zinc-100">
                                     <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="h-6 w-6 flex-none">
                                         <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"></path>
                                         <path d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5" class="stroke-zinc-400 dark:stroke-zinc-500"></path>
                                     </svg>
-                                    <span class="ml-3">Work</span>
+                                    <span class="ml-3">Where I Work</span>
                                 </h2>
                                 <ol class="mt-6 space-y-4">
                                     <li class="flex gap-4">
@@ -233,15 +236,15 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                         </div>
                                         <dl class="flex flex-auto flex-wrap gap-x-2">
                                             <dt class="sr-only">Company</dt>
-                                            <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                            <dd class="w-full flex-none text-md font-medium text-zinc-900 dark:text-zinc-100">
                                                 Geomiq Limited
                                             </dd>
                                             <dt class="sr-only">Role</dt>
-                                            <dd class="text-xs text-zinc-500 dark:text-zinc-400">
-                                                Senior Engineering Manager
+                                            <dd class="text-md text-zinc-500 dark:text-zinc-400">
+                                                Engineering Manager
                                             </dd>
                                             <dt class="sr-only">Date</dt>
-                                            <dd class="ml-auto text-xs text-zinc-500" aria-label="2019 until Present">
+                                            <dd class="ml-auto text-sm text-zinc-500" aria-label="2019 until Present">
                                                 <time datetime="July 2022">July 2022</time>
                                                 <span aria-hidden="true">—</span>
                                                 <time datetime="{today.getFullYear()}">Present</time>
@@ -261,15 +264,15 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                         </div>
                                         <dl class="flex flex-auto flex-wrap gap-x-2">
                                             <dt class="sr-only">Company</dt>
-                                            <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                            <dd class="w-full flex-none text-lg font-medium text-zinc-900 dark:text-zinc-100">
                                                 Laravel News
                                             </dd>
                                             <dt class="sr-only">Role</dt>
-                                            <dd class="text-xs text-zinc-500 dark:text-zinc-400">
+                                            <dd class="text-md text-zinc-500 dark:text-zinc-400">
                                                 Technical Writer
                                             </dd>
                                             <dt class="sr-only">Date</dt>
-                                            <dd class="ml-auto text-xs text-zinc-500" aria-label="2019 until Present">
+                                            <dd class="ml-auto text-sm text-zinc-500" aria-label="2019 until Present">
                                                 <time datetime="June 2022">June 2022</time>
                                                 <span aria-hidden="true">—</span>
                                                 <time datetime="{today.getFullYear()}">Present</time>
@@ -289,15 +292,15 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                         </div>
                                         <dl class="flex flex-auto flex-wrap gap-x-2">
                                             <dt class="sr-only">Company</dt>
-                                            <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                            <dd class="w-full flex-none text-lg font-medium text-zinc-900 dark:text-zinc-100">
                                                 Lila Fuches Limited
                                             </dd>
                                             <dt class="sr-only">Role</dt>
-                                            <dd class="text-xs text-zinc-500 dark:text-zinc-400">
-                                                Chief Technology Officer
+                                            <dd class="text-md text-zinc-500 dark:text-zinc-400">
+                                                CTO
                                             </dd>
                                             <dt class="sr-only">Date</dt>
-                                            <dd class="ml-auto text-xs text-zinc-500" aria-label="2019 until Present">
+                                            <dd class="ml-auto text-sm text-zinc-500" aria-label="2019 until Present">
                                                 <time datetime="August 2019">August 2019</time>
                                                 <span aria-hidden="true">—</span>
                                                 <time datetime="{today.getFullYear()}">Present</time>

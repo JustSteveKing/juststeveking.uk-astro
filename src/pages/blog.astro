@@ -17,20 +17,20 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                             Writing on software engineering, mostly tutorials.
                         </h1>
-                        <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                        <p class="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
                             I write a lot of tutorials, in the aims that others can learn from my experience. It is also a great way to document how you approach common problems, so that you have a point of reference.
                         </p>
-                        <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                        <p class="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
                             Some of these are links through to <span class="text-laravel-news">Laravel News</span> where they are articles that I have written there.
                         </p>
                     </header>
                     <div class="mt-16 sm:mt-20">
-                        <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+                        <div class="md:border-l-2 md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
                             <div class="flex max-w-3xl flex-col space-y-16">
                                 {posts.map((post) => (
                                     <article class="md:grid md:grid-cols-4 md:items-baseline">
                                         <div class="md:col-span-3 group relative flex flex-col items-start">
-                                            <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                            <h2 class="text-lg font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                                                 <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                                                 {post.frontmatter.partner
                                                     ?
@@ -40,20 +40,20 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                                             style=" "
                                                         >
                                                             <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                                            <span class="relative z-10">
+                                                            <span class="relative z-10 text-lg">
                                                                 {post.frontmatter.title}
                                                             </span>
                                                         </Link>
                                                     :
                                                         <a href={post.url}>
                                                             <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                                            <span class="relative z-10">
+                                                            <span class="relative z-10 text-lg">
                                                                 {post.frontmatter.title}
                                                             </span>
                                                         </a>
                                                 }
                                             </h2>
-                                            <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" datetime={post.frontmatter.pubDate}>
+                                            <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-md text-zinc-400 dark:text-zinc-500 pl-3.5" datetime={post.frontmatter.pubDate}>
                                                 <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
                                                     <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                                                 </span>
@@ -63,17 +63,17 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                                     day: 'numeric',
                                                 })}
                                             </time>
-                                            <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                                            <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-400">
                                                 {post.frontmatter.description}
                                             </p>
-                                            <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                                            <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-md font-medium text-teal-500">
                                                 {post.frontmatter.partner ? 'Read article on Laravel News' : 'Read article'}
                                                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                                                     <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </div>
-                                        <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500" datetime={post.frontmatter.pubDate}>
+                                        <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-md text-zinc-500" datetime={post.frontmatter.pubDate}>
                                             {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
                                                 year: 'numeric',
                                                 month: 'short',
