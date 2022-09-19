@@ -80,7 +80,6 @@ WORK_DESCRIPTION,
         />
 
         <script
-            type="text/partytown"
             src="https://cdn.usefathom.com/script.js"
             data-site={FATHOM_SITE}
             defer
@@ -153,10 +152,6 @@ WORK_DESCRIPTION,
                     !prefetched.has(node.href), // not already prefetched
                 ).forEach((node) => observer.observe(node));
             }
-
-            function track(code, value) {
-                window.fathom.trackGoal(code, value);
-            };
         </script>
     </body>
 </html>
