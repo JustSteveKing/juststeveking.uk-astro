@@ -1,0 +1,63 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/neo4j-http-adapter": [
+            {
+                "name": "juststeveking/neo4j-http-adapter",
+                "description": "A slim psr compliant http client",
+                "keywords": [],
+                "homepage": "",
+                "version": "v1.0",
+                "version_normalized": "1.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk",
+                        "role": "Author"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/neo4j-http-adapter.git",
+                    "type": "git",
+                    "reference": "17113201a832917d6c17733549fdbca836e52f55"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/neo4j-http-adapter/zipball/17113201a832917d6c17733549fdbca836e52f55",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "17113201a832917d6c17733549fdbca836e52f55"
+                },
+                "type": "library",
+                "time": "2020-05-28T14:13:58+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Graph\\Connection\\Adapters\\Neo4j\\Http\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^7.4",
+                    "guzzlehttp/guzzle": "^6.5"
+                },
+                "require-dev": {
+                    "psr/http-client": "^1.0",
+                    "phpunit/phpunit": "^9.1",
+                    "phpstan/phpstan": "^0.12.25",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "roave/security-advisories": "dev-master",
+                    "thecodingmachine/phpstan-safe-rule": "^1.0",
+                    "phploc/phploc": "^6.0",
+                    "juststeveking/graph-connection": "dev-master"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/neo4j-http-adapter/issues",
+                    "source": "https://github.com/JustSteveKing/neo4j-http-adapter/tree/v1.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

@@ -1,0 +1,89 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/config": [
+            {
+                "name": "juststeveking/config",
+                "description": "A simple dot notation connfiguration package",
+                "keywords": [],
+                "homepage": "",
+                "version": "v2.0.0",
+                "version_normalized": "2.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/config.git",
+                    "type": "git",
+                    "reference": "34a73b3777d6e5bb03ad1c1f19b90f93c2001a38"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/config/zipball/34a73b3777d6e5bb03ad1c1f19b90f93c2001a38",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "34a73b3777d6e5bb03ad1c1f19b90f93c2001a38"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2021-02-18T21:57:11+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Config\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^8.0"
+                },
+                "require-dev": {
+                    "phpstan/phpstan": "^0.12.25",
+                    "phpunit/phpunit": "^9.1",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "thecodingmachine/phpstan-safe-rule": "^1.0",
+                    "vimeo/psalm": "^3.11"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/config/issues",
+                    "source": "https://github.com/JustSteveKing/config/tree/v2.0.0"
+                }
+            },
+            {
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/config.git",
+                    "type": "git",
+                    "reference": "d134e7543212f2328d942db77ce9bc0e3f132d26"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/config/zipball/d134e7543212f2328d942db77ce9bc0e3f132d26",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "d134e7543212f2328d942db77ce9bc0e3f132d26"
+                },
+                "time": "2020-06-08T07:43:56+00:00",
+                "require": {
+                    "php": "^7.4"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/config/issues",
+                    "source": "https://github.com/JustSteveKing/config/tree/v1.0.0"
+                },
+                "funding": "__unset"
+            }
+        ]
+    },
+    "security-advisories": []
+}

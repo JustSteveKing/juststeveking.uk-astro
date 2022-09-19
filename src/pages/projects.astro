@@ -5,6 +5,11 @@ import Link from '../components/Link.astro';
 import PageLayout from "../layouts/PageLayout.astro";
 
 import image from "./../assets/images/package.png";
+
+const packages = (await Astro.glob('./projects/*.json')).map((project) => {
+    return Object.values(project.packages)[0][0];
+});
+
 ---
 
 <PageLayout>
@@ -22,294 +27,42 @@ import image from "./../assets/images/package.png";
                     </header>
                     <div class="mt-16 sm:mt-20">
                         <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/http-slim"
-                                        title="HTTP Slim package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/http-slim</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A slim psr compliant http client to provide better interoperability.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/http-status-code"
-                                        title="HTTP Status Code package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/http-status-code</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A simple class to return correct status codes for http responses as a PHP 8.1 Enum.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/laravel-data-object-tools"
-                                        title="Laravel Data Object Tools package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/laravel-data-object-tools</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A set of tools to make working with Data Transfer Objects easier in Laravel.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/laravel-envoyer-sdk"
-                                        title="Laravel Envoyer SDK package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/laravel-envoyer-sdk</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A simple to use PHP class to work with the Laravel Envoyer API.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/laravel-postcodes"
-                                        title="Laravel Postcodes package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/laravel-postcodes</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A service wrapper around postcodes.io.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/laravel-transporter"
-                                        title="Laravel Transporter package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/laravel-transporter</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    Transporter is a futuristic way to send API requests in PHP. This is an OOP approach to handle API requests.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/parameterbag"
-                                        title="Parameterbag package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/parameterbag</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A flexible parameter bag in place of standard arrays on PHP classes.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/php-sdk"
-                                        title="PHP-SDK package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/php-sdk</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A base SDK for your PHP SDKs.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
-                            <li class="group relative flex flex-col items-start">
-                                <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                    <Image
-                                        src={image}
-                                        width={400}
-                                        height={400}
-                                        alt="Package"
-                                        format="webp"
-                                        class="h-8 w-8 object-cover"
-                                    />
-                                </div>
-                                <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-                                    <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                    <Link
-                                        link="https://packagist.org/packages/juststeveking/uri-builder"
-                                        title="Uri Builder package on packagist"
-                                        style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
-                                    >
-                                        <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                        <span class="relative z-10 text-lg">juststeveking/uri-builder</span>
-                                    </Link>
-                                </h2>
-                                <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
-                                    A simple URI builder in PHP that is slightly opinionated.
-                                </p>
-                                <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                        <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
-                                    </svg>
-                                    <span class="ml-2">packagist.org</span>
-                                </p>
-                            </li>
+                            
+                            {packages.map((project) => (
+                                <li class="group relative flex flex-col items-start">
+                                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                                        <Image
+                                            src={image}
+                                            width={400}
+                                            height={400}
+                                            alt="Package"
+                                            format="webp"
+                                            class="h-8 w-8 object-cover"
+                                        />
+                                    </div>
+                                    <h2 class="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
+                                        <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                                        <Link
+                                            link={project.source.url}
+                                            title="HTTP Slim package on github"
+                                            style="text-zinc-600 dark:text-zinc-300 group-hover:text-teal-500"
+                                        >
+                                            <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                                            <span class="relative z-10 text-lg">{project.name}</span>
+                                        </Link>
+                                    </h2>
+                                    <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
+                                        {project.description}
+                                    </p>
+                                    <p class="relative z-10 mt-6 flex text-md font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
+                                            <path d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z" fill="currentColor"></path>
+                                        </svg>
+                                        <span class="ml-2">github.com</span>
+                                    </p>
+                                </li>
+                            ))}
+                            
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,236 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-postcodes": [
+            {
+                "name": "juststeveking/laravel-postcodes",
+                "description": "A service wrapper around postcodes.io",
+                "keywords": [
+                    "JustSteveKing",
+                    "LaravelPostcodes"
+                ],
+                "homepage": "https://github.com/JustSteveKing/LaravelPostcodes",
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://github.com/JustSteveKing",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                    "type": "git",
+                    "reference": "cb2d2f8b54a86ac4fff6559defe4689b16a62290"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/cb2d2f8b54a86ac4fff6559defe4689b16a62290",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "cb2d2f8b54a86ac4fff6559defe4689b16a62290"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2022-03-01T08:51:54+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\LaravelPostcodes\\": "src"
+                    }
+                },
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    },
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\LaravelPostcodes\\PostcodesServiceProvider"
+                        ],
+                        "aliases": {
+                            "Postcode": "JustSteveKing\\LaravelPostcodes\\Facades\\Postcode"
+                        }
+                    }
+                },
+                "require": {
+                    "php": "~7.2|^8.0",
+                    "guzzlehttp/guzzle": "^6.3|^7.0",
+                    "illuminate/support": "~5.8|^6.0|^7.0|^8.0|^9.0"
+                },
+                "require-dev": {
+                    "phpunit/phpunit": ">=7.0",
+                    "orchestra/testbench": "^4.0",
+                    "squizlabs/php_codesniffer": "^3.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                    "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/2.0.0"
+                }
+            },
+            {
+                "version": "V1.5.0",
+                "version_normalized": "1.5.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                    "type": "git",
+                    "reference": "8146ea698867af3f3094ee5ca2f8f92bd8225beb"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/8146ea698867af3f3094ee5ca2f8f92bd8225beb",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "8146ea698867af3f3094ee5ca2f8f92bd8225beb"
+                },
+                "time": "2021-06-18T16:47:41+00:00",
+                "require": {
+                    "php": "~7.2|^8.0",
+                    "guzzlehttp/guzzle": "^6.3|^7.0",
+                    "illuminate/support": "~5.8|^6.0|^7.0|^8.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                    "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/V1.5.0"
+                }
+            },
+            {
+                "version": "V1.4.0",
+                "version_normalized": "1.4.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                    "type": "git",
+                    "reference": "68e6e5782d658efdde861b77ba61dcc657a31510"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/68e6e5782d658efdde861b77ba61dcc657a31510",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "68e6e5782d658efdde861b77ba61dcc657a31510"
+                },
+                "time": "2021-04-12T09:41:40+00:00",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    },
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\LaravelPostcodes\\PostcodesServiceProvider"
+                        ]
+                    }
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                    "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/V1.4.0"
+                }
+            },
+            {
+                "version": "v1.3.0",
+                "version_normalized": "1.3.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                    "type": "git",
+                    "reference": "b9d6e1c8650d7fc307c60fd8dbe06c101bbf206e"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/b9d6e1c8650d7fc307c60fd8dbe06c101bbf206e",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "b9d6e1c8650d7fc307c60fd8dbe06c101bbf206e"
+                },
+                "time": "2020-10-16T12:10:49+00:00",
+                "require": {
+                    "php": "~7.2",
+                    "guzzlehttp/guzzle": "^6.3|^7.0",
+                    "illuminate/support": "~5.8|^6.0|^7.0|^8.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                    "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/v1.3.0"
+                },
+                "funding": "__unset"
+            },
+            {
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                    "type": "git",
+                    "reference": "d046c51121590c3ab34c058723cbe3143148fc37"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/d046c51121590c3ab34c058723cbe3143148fc37",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "d046c51121590c3ab34c058723cbe3143148fc37"
+                },
+                "time": "2020-03-03T12:43:24+00:00",
+                "require": {
+                    "php": "~7.2",
+                    "guzzlehttp/guzzle": "^6.3",
+                    "illuminate/support": "~5.8|^6.0|^7.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                    "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/master"
+                }
+            },
+            {
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                    "type": "git",
+                    "reference": "104ff33448c64e37dd53ff59b1dc67236f92eefe"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/104ff33448c64e37dd53ff59b1dc67236f92eefe",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "104ff33448c64e37dd53ff59b1dc67236f92eefe"
+                },
+                "time": "2019-10-14T12:33:20+00:00",
+                "require": {
+                    "php": "~7.2",
+                    "guzzlehttp/guzzle": "^6.3",
+                    "illuminate/support": "~5.8|^6.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                    "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/v1.0.1"
+                }
+            },
+            {
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0"
+            },
+            {
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/LaravelPostcodes.git",
+                    "type": "git",
+                    "reference": "5a895ab4824a3c4f9b94801fa26385799d2a4dc1"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/LaravelPostcodes/zipball/5a895ab4824a3c4f9b94801fa26385799d2a4dc1",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "5a895ab4824a3c4f9b94801fa26385799d2a4dc1"
+                },
+                "time": "2019-10-14T11:58:14+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/LaravelPostcodes/issues",
+                    "source": "https://github.com/JustSteveKing/LaravelPostcodes/tree/master"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

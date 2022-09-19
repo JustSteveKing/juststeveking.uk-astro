@@ -1,0 +1,64 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/config-loader": [
+            {
+                "name": "juststeveking/config-loader",
+                "description": "A simple to use configuration loader for PHP",
+                "keywords": [],
+                "homepage": "",
+                "version": "0.1.0",
+                "version_normalized": "0.1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Author"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/config-loader.git",
+                    "type": "git",
+                    "reference": "11ea5a929a87ca2e13fc558ea64adb8520c4200b"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/config-loader/zipball/11ea5a929a87ca2e13fc558ea64adb8520c4200b",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "11ea5a929a87ca2e13fc558ea64adb8520c4200b"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2021-06-23T10:59:06+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\ConfigLoader\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^8.0"
+                },
+                "require-dev": {
+                    "juststeveking/config": "^2.0",
+                    "pestphp/pest": "^1.8",
+                    "spatie/ray": "^1.26",
+                    "vimeo/psalm": "^4.8"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/config-loader/issues",
+                    "source": "https://github.com/JustSteveKing/config-loader/tree/0.1.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

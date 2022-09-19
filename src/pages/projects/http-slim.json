@@ -1,0 +1,236 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/http-slim": [
+            {
+                "name": "juststeveking/http-slim",
+                "description": "A slim psr compliant http client to provide better interoperability.",
+                "keywords": [
+                    "psr-7",
+                    "http-client",
+                    "psr-17",
+                    "psr-18"
+                ],
+                "homepage": "",
+                "version": "v2.1.0",
+                "version_normalized": "2.1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/http-slim.git",
+                    "type": "git",
+                    "reference": "7ea63b70ec116102cad8b8453b79054529619528"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/http-slim/zipball/7ea63b70ec116102cad8b8453b79054529619528",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "7ea63b70ec116102cad8b8453b79054529619528"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2021-08-27T11:05:43+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\HttpSlim\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^8.0",
+                    "ext-json": "*",
+                    "php-http/client-common": "^2.4",
+                    "php-http/discovery": "^1.14",
+                    "php-http/mock-client": "^1.5",
+                    "psr/http-client": "^1.0",
+                    "psr/http-factory": "^1.0",
+                    "thecodingmachine/safe": "^1.3"
+                },
+                "require-dev": {
+                    "nyholm/psr7": "^1.3",
+                    "pestphp/pest": "^1.17",
+                    "pestphp/pest-plugin-parallel": "^0.3.0",
+                    "php-parallel-lint/php-parallel-lint": "^1.2",
+                    "phpspec/prophecy-phpunit": "^2.0",
+                    "phpunit/phpunit": "^9.1",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "symfony/http-client": "^5.0",
+                    "symfony/var-dumper": "^5.0",
+                    "thecodingmachine/phpstan-safe-rule": "^1.0"
+                },
+                "provide": {
+                    "php-http/client-implementation": "1.0",
+                    "psr/http-client-implementation": "1.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/http-slim/issues",
+                    "source": "https://github.com/JustSteveKing/http-slim/tree/v2.1.0"
+                }
+            },
+            {
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/http-slim.git",
+                    "type": "git",
+                    "reference": "153b946763a2a598c29eca2ddd6331d0245f6cbb"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/http-slim/zipball/153b946763a2a598c29eca2ddd6331d0245f6cbb",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "153b946763a2a598c29eca2ddd6331d0245f6cbb"
+                },
+                "time": "2021-07-13T08:09:12+00:00",
+                "require": {
+                    "php": "^8.0",
+                    "ext-json": "*",
+                    "psr/http-client": "^1.0",
+                    "psr/http-factory": "^1.0",
+                    "thecodingmachine/safe": "^1.3"
+                },
+                "require-dev": {
+                    "nyholm/psr7": "^1.3",
+                    "php-parallel-lint/php-parallel-lint": "^1.2",
+                    "phpspec/prophecy-phpunit": "^2.0",
+                    "phpunit/phpunit": "^9.1",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "symfony/http-client": "^5.0",
+                    "symfony/var-dumper": "^5.0",
+                    "thecodingmachine/phpstan-safe-rule": "^1.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/http-slim/issues",
+                    "source": "https://github.com/JustSteveKing/http-slim/tree/2.0.0"
+                }
+            },
+            {
+                "description": "A slim psr compliant http client to provide better interoperability",
+                "version": "v1.2.1",
+                "version_normalized": "1.2.1.0",
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/http-slim.git",
+                    "type": "git",
+                    "reference": "33174f6b19287da02d1082d78bdbdaaefb3ae2dc"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/http-slim/zipball/33174f6b19287da02d1082d78bdbdaaefb3ae2dc",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "33174f6b19287da02d1082d78bdbdaaefb3ae2dc"
+                },
+                "time": "2020-11-04T08:28:58+00:00",
+                "require": {
+                    "php": "^7.4|^8.0",
+                    "ext-json": "*",
+                    "psr/http-client": "^1.0",
+                    "psr/http-factory": "^1.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/http-slim/issues",
+                    "source": "https://github.com/JustSteveKing/http-slim/tree/v1.2.1"
+                }
+            },
+            {
+                "version": "v1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/http-slim.git",
+                    "type": "git",
+                    "reference": "5258e71399ca7e356489b6565da2aede1adbcc87"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/http-slim/zipball/5258e71399ca7e356489b6565da2aede1adbcc87",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "5258e71399ca7e356489b6565da2aede1adbcc87"
+                },
+                "time": "2020-10-30T10:45:39+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/http-slim/issues",
+                    "source": "https://github.com/JustSteveKing/http-slim/tree/v1.2.0"
+                }
+            },
+            {
+                "version": "v1.1",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/http-slim.git",
+                    "type": "git",
+                    "reference": "94337695cd1d0bace8e4cc23ba603e07be5c4881"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/http-slim/zipball/94337695cd1d0bace8e4cc23ba603e07be5c4881",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "94337695cd1d0bace8e4cc23ba603e07be5c4881"
+                },
+                "time": "2020-05-31T21:01:43+00:00",
+                "require": {
+                    "php": "^7.4",
+                    "ext-json": "*",
+                    "psr/http-client": "^1.0",
+                    "psr/http-factory": "^1.0"
+                },
+                "require-dev": {
+                    "nyholm/psr7": "^1.3",
+                    "php-parallel-lint/php-parallel-lint": "^1.2",
+                    "phpspec/prophecy-phpunit": "^2.0",
+                    "phpunit/phpunit": "^9.1",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "symfony/http-client": "^5.0",
+                    "symfony/var-dumper": "^5.0",
+                    "thecodingmachine/phpstan-safe-rule": "^1.0",
+                    "vimeo/psalm": "^3.11"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/http-slim/issues",
+                    "source": "https://github.com/JustSteveKing/http-slim/tree/master"
+                },
+                "funding": "__unset",
+                "provide": "__unset"
+            },
+            {
+                "version": "v1.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/http-slim.git",
+                    "type": "git",
+                    "reference": "9f0b91df92c514009cb585dc48b9f9e18d4d0dab"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/http-slim/zipball/9f0b91df92c514009cb585dc48b9f9e18d4d0dab",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "9f0b91df92c514009cb585dc48b9f9e18d4d0dab"
+                },
+                "time": "2020-05-29T20:51:08+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/http-slim/issues",
+                    "source": "https://github.com/JustSteveKing/http-slim/tree/v1.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

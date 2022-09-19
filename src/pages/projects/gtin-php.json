@@ -1,0 +1,103 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/gtin-php": [
+            {
+                "name": "juststeveking/gtin-php",
+                "description": "A PHP package for validating GTIN codes",
+                "keywords": [],
+                "homepage": "",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/gtin-php.git",
+                    "type": "git",
+                    "reference": "29128335dac911f7377d5293aebf1cbaea260bf8"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/gtin-php/zipball/29128335dac911f7377d5293aebf1cbaea260bf8",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "29128335dac911f7377d5293aebf1cbaea260bf8"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2021-01-13T14:26:54+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\GtinPHP\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\GtinPHP\\Providers\\GtinServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^7.4|^8.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^2.17",
+                    "orchestra/testbench": "^6.7",
+                    "illuminate/support": "^8.22",
+                    "phpunit/phpunit": "^9.5",
+                    "vimeo/psalm": "^4.3"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/gtin-php/issues",
+                    "source": "https://github.com/JustSteveKing/gtin-php/tree/v1.0.1"
+                }
+            },
+            {
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/gtin-php.git",
+                    "type": "git",
+                    "reference": "ba250fc4d869be5ad60361c481ac2acf790de738"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/gtin-php/zipball/ba250fc4d869be5ad60361c481ac2acf790de738",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "ba250fc4d869be5ad60361c481ac2acf790de738"
+                },
+                "time": "2021-01-13T14:12:22+00:00",
+                "require": {
+                    "php": "^7.4|^8.0",
+                    "illuminate/support": "^8.22"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^2.17",
+                    "orchestra/testbench": "^6.7",
+                    "phpunit/phpunit": "^9.5",
+                    "symfony/var-dumper": "5.x-dev",
+                    "vimeo/psalm": "^4.3"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/gtin-php/issues",
+                    "source": "https://github.com/JustSteveKing/gtin-php/tree/v1.0.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

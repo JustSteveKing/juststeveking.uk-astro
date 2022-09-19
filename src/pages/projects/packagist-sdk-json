@@ -1,0 +1,92 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/packagist-sdk": [
+            {
+                "name": "juststeveking/packagist-sdk",
+                "description": "A simple SDK for packagist",
+                "keywords": [],
+                "homepage": "",
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/packagist-api.git",
+                    "type": "git",
+                    "reference": "871ba2ca5210a497d7e2f164c6ef341f881f021a"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/packagist-api/zipball/871ba2ca5210a497d7e2f164c6ef341f881f021a",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "871ba2ca5210a497d7e2f164c6ef341f881f021a"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2020-10-30T12:19:26+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Packagist\\SDK\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^7.4|^8.0",
+                    "juststeveking/php-sdk": "^1.1.0",
+                    "nyholm/psr7": "^1.3",
+                    "php-di/php-di": "9999999-dev",
+                    "symfony/http-client": "9999999-dev"
+                },
+                "require-dev": {
+                    "phpunit/phpunit": "9.5.x-dev",
+                    "symfony/var-dumper": "9999999-dev"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/packagist-api/issues",
+                    "source": "https://github.com/JustSteveKing/packagist-api/tree/v1.1.0"
+                }
+            },
+            {
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/packagist-api.git",
+                    "type": "git",
+                    "reference": "11b4fae94f994d4761f8a3de1b0d1625f16764de"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/packagist-api/zipball/11b4fae94f994d4761f8a3de1b0d1625f16764de",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "11b4fae94f994d4761f8a3de1b0d1625f16764de"
+                },
+                "time": "2020-10-29T14:54:08+00:00",
+                "require": {
+                    "juststeveking/php-sdk": "^1.0",
+                    "nyholm/psr7": "^1.3",
+                    "php-di/php-di": "9999999-dev",
+                    "symfony/http-client": "9999999-dev"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/packagist-api/issues",
+                    "source": "https://github.com/JustSteveKing/packagist-api/tree/v1.0.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

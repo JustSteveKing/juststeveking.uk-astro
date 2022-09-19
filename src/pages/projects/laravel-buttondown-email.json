@@ -1,0 +1,79 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-buttondown-email": [
+            {
+                "name": "juststeveking/laravel-buttondown-email",
+                "description": "Manage Newsletters in Laravel, using the buttondown.email API",
+                "keywords": [
+                    "api",
+                    "integration",
+                    "JustSteveKing",
+                    "laravel-buttondown-email",
+                    "buttondown email"
+                ],
+                "homepage": "https://github.com/juststeveking/laravel-buttondown-email",
+                "version": "0.1.0",
+                "version_normalized": "0.1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-buttondown-email.git",
+                    "type": "git",
+                    "reference": "50858791289686dd95408a1e90821ff232fbf2c1"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-buttondown-email/zipball/50858791289686dd95408a1e90821ff232fbf2c1",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "50858791289686dd95408a1e90821ff232fbf2c1"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2021-05-14T17:06:19+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Laravel\\ButtonDownEmail\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\Laravel\\ButtonDownEmail\\ButtonDownServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/support": "^8.41",
+                    "juststeveking/uri-builder": "^1.1"
+                },
+                "require-dev": {
+                    "guzzlehttp/guzzle": "^7.3",
+                    "nunomaduro/collision": "^5.3",
+                    "orchestra/testbench": "^6.17",
+                    "phpunit/phpunit": "^9.5"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-buttondown-email/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-buttondown-email/tree/0.1.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

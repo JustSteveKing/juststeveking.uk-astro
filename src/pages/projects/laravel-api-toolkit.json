@@ -1,0 +1,72 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-api-toolkit": [
+            {
+                "name": "juststeveking/laravel-api-toolkit",
+                "description": "A toolkit for creating APIs in Laravel",
+                "keywords": [],
+                "homepage": "",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-api-toolkit.git",
+                    "type": "git",
+                    "reference": "bb9d3d373dbb2fed4eded158d23cd34ebef015c3"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-api-toolkit/zipball/bb9d3d373dbb2fed4eded158d23cd34ebef015c3",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "bb9d3d373dbb2fed4eded158d23cd34ebef015c3"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2020-12-16T13:44:20+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Laravel\\ApiToolkit\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\Laravel\\ApiToolkit\\ApiToolkitServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^7.4|^8.0",
+                    "illuminate/support": "^8.19"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^2.17",
+                    "orchestra/testbench": "^6.7",
+                    "phpunit/phpunit": "^9.5",
+                    "vimeo/psalm": "^4.3"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-api-toolkit/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-api-toolkit/tree/v1.0.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

@@ -1,0 +1,60 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/workflow": [
+            {
+                "name": "juststeveking/workflow",
+                "description": "A simple php workflow package",
+                "keywords": [],
+                "homepage": "",
+                "version": "0.0.1",
+                "version_normalized": "0.0.1.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/workflow.git",
+                    "type": "git",
+                    "reference": "0e59f7e2b89729da50fec5c9817fdb911c910014"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/workflow/zipball/0e59f7e2b89729da50fec5c9817fdb911c910014",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "0e59f7e2b89729da50fec5c9817fdb911c910014"
+                },
+                "type": "library",
+                "time": "2021-12-02T20:44:52+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Workflow\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^8.0",
+                    "ramsey/uuid": "^4.2",
+                    "symfony/yaml": "^6.0",
+                    "tightenco/collect": "^8.68"
+                },
+                "require-dev": {
+                    "pestphp/pest": "^1.21",
+                    "phpstan/phpstan": "^1.2",
+                    "spatie/ray": "^1.32"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/workflow/issues",
+                    "source": "https://github.com/JustSteveKing/workflow/tree/0.0.1"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

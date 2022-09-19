@@ -1,0 +1,234 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-feature-flags": [
+            {
+                "name": "juststeveking/laravel-feature-flags",
+                "description": "A simple to use Feature Flags package for Laravel",
+                "keywords": [
+                    "laravel",
+                    "JustSteveKing",
+                    "laravel-feature-flags"
+                ],
+                "homepage": "https://github.com/JustSteveKing/laravel-feature-flags",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-feature-flags.git",
+                    "type": "git",
+                    "reference": "eb4ecc3fb02fbb7fa94878cee92a00f40939aa42"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-feature-flags/zipball/eb4ecc3fb02fbb7fa94878cee92a00f40939aa42",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "eb4ecc3fb02fbb7fa94878cee92a00f40939aa42"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2022-07-21T13:20:03+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Laravel\\FeatureFlags\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\Laravel\\FeatureFlags\\FeatureFlagsServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/support": "^9.0.1"
+                },
+                "require-dev": {
+                    "doctrine/dbal": "^3.3",
+                    "nunomaduro/collision": "^6.0",
+                    "orchestra/testbench": "^7.0.0",
+                    "pestphp/pest": "^1.21.1",
+                    "pestphp/pest-plugin-laravel": "^1.2",
+                    "phpunit/phpunit": "^9.3",
+                    "vimeo/psalm": "^4.4"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-feature-flags/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-feature-flags/tree/1.2.0"
+                }
+            },
+            {
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-feature-flags.git",
+                    "type": "git",
+                    "reference": "154b06dd2c9151a36e8acce2872989b2814eb5d8"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-feature-flags/zipball/154b06dd2c9151a36e8acce2872989b2814eb5d8",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "154b06dd2c9151a36e8acce2872989b2814eb5d8"
+                },
+                "time": "2022-06-28T07:01:18+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-feature-flags/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-feature-flags/tree/1.1.0"
+                }
+            },
+            {
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-feature-flags.git",
+                    "type": "git",
+                    "reference": "bd8e15106aeba87c5c63a333d9d418d782dd88c4"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-feature-flags/zipball/bd8e15106aeba87c5c63a333d9d418d782dd88c4",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "bd8e15106aeba87c5c63a333d9d418d782dd88c4"
+                },
+                "time": "2022-02-11T09:25:48+00:00",
+                "require-dev": {
+                    "nunomaduro/collision": "^6.0",
+                    "orchestra/testbench": "^7.0.0",
+                    "pestphp/pest": "^1.21.1",
+                    "pestphp/pest-plugin-laravel": "^1.2",
+                    "phpunit/phpunit": "^9.3",
+                    "vimeo/psalm": "^4.4"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-feature-flags/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-feature-flags/tree/1.0.0"
+                }
+            },
+            {
+                "version": "0.3.0",
+                "version_normalized": "0.3.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-feature-flags.git",
+                    "type": "git",
+                    "reference": "3ac9f221dcc7b3c6690fc89003fa5bb32643ab12"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-feature-flags/zipball/3ac9f221dcc7b3c6690fc89003fa5bb32643ab12",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "3ac9f221dcc7b3c6690fc89003fa5bb32643ab12"
+                },
+                "time": "2022-02-07T08:02:03+00:00",
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/support": "^8.0"
+                },
+                "require-dev": {
+                    "nunomaduro/collision": "^5.3",
+                    "orchestra/testbench": "^6.15",
+                    "pestphp/pest": "^1.9",
+                    "pestphp/pest-plugin-laravel": "^1.2",
+                    "phpunit/phpunit": "^9.3",
+                    "vimeo/psalm": "^4.4"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-feature-flags/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-feature-flags/tree/0.3.0"
+                }
+            },
+            {
+                "version": "0.2.0",
+                "version_normalized": "0.2.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-feature-flags.git",
+                    "type": "git",
+                    "reference": "ab7a81c805ab334e26d9260d506511f9143ed79d"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-feature-flags/zipball/ab7a81c805ab334e26d9260d506511f9143ed79d",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "ab7a81c805ab334e26d9260d506511f9143ed79d"
+                },
+                "time": "2022-01-19T08:20:11+00:00",
+                "require-dev": {
+                    "nunomaduro/collision": "^5.3",
+                    "orchestra/testbench": "^6.15",
+                    "phpunit/phpunit": "^9.3",
+                    "pestphp/pest": "^1.9",
+                    "vimeo/psalm": "^4.4"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-feature-flags/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-feature-flags/tree/0.2.0"
+                }
+            },
+            {
+                "version": "0.1.0",
+                "version_normalized": "0.1.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-feature-flags.git",
+                    "type": "git",
+                    "reference": "e7c8af1bd9aef93466cab0b2dc07bd7df990a661"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-feature-flags/zipball/e7c8af1bd9aef93466cab0b2dc07bd7df990a661",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "e7c8af1bd9aef93466cab0b2dc07bd7df990a661"
+                },
+                "time": "2021-10-06T16:31:21+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-feature-flags/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-feature-flags/tree/0.1.0"
+                }
+            },
+            {
+                "version": "0.0.1",
+                "version_normalized": "0.0.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-feature-flags.git",
+                    "type": "git",
+                    "reference": "2996e54cdede463bdcfbd745e6276687e78f870e"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-feature-flags/zipball/2996e54cdede463bdcfbd745e6276687e78f870e",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "2996e54cdede463bdcfbd745e6276687e78f870e"
+                },
+                "time": "2021-09-20T07:13:04+00:00",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\Laravel\\FeatureFlags\\FeatureFlagsServiceProvider"
+                        ],
+                        "aliases": {
+                            "FeatureFlags": "JustSteveKing\\Laravel\\FeatureFlags\\FeatureFlagsFacade"
+                        }
+                    }
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-feature-flags/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-feature-flags/tree/0.0.1"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

@@ -1,0 +1,65 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/yaml-parser": [
+            {
+                "name": "juststeveking/yaml-parser",
+                "description": "A YAML parser for open api",
+                "keywords": [],
+                "homepage": "",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/yaml-parser.git",
+                    "type": "git",
+                    "reference": "eed0f8590b7ce12c283f151ee2c550c93074c3f5"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/yaml-parser/zipball/eed0f8590b7ce12c283f151ee2c550c93074c3f5",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "eed0f8590b7ce12c283f151ee2c550c93074c3f5"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2022-04-21T10:17:17+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\YamlParser\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^8.1",
+                    "symfony/yaml": "^6.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.8",
+                    "pestphp/pest": "^1.21",
+                    "phpstan/phpstan": "^1.5",
+                    "symfony/var-dumper": "^6.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/yaml-parser/issues",
+                    "source": "https://github.com/JustSteveKing/yaml-parser/tree/1.0.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

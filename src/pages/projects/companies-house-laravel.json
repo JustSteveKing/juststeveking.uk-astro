@@ -1,0 +1,275 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/companies-house-laravel": [
+            {
+                "name": "juststeveking/companies-house-laravel",
+                "description": "A Laravel wrapper to get companies house information and validate company numbers",
+                "keywords": [
+                    "api",
+                    "validation",
+                    "integration",
+                    "companies house",
+                    "JustSteveKing",
+                    "companies-house-laravel"
+                ],
+                "homepage": "https://github.com/juststeveking/companies-house-laravel",
+                "version": "2.0.4",
+                "version_normalized": "2.0.4.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "7eb6ecb130f657f189341860a4836d2882a126d0"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/7eb6ecb130f657f189341860a4836d2882a126d0",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "7eb6ecb130f657f189341860a4836d2882a126d0"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2021-09-14T09:47:30+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\CompaniesHouse\\": "src"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\CompaniesHouse\\CompaniesHouseServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/contracts": "^8.40",
+                    "illuminate/support": "^8.0",
+                    "spatie/data-transfer-object": "^3.1"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^2.16",
+                    "guzzlehttp/guzzle": "^7.3",
+                    "orchestra/testbench": "^6.0",
+                    "phpunit/phpunit": "^9.3",
+                    "vimeo/psalm": "^3.11"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/2.0.4"
+                }
+            },
+            {
+                "version": "2.0.3",
+                "version_normalized": "2.0.3.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "ce7d336039916c0604cc70f16b6393c57e8b7574"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/ce7d336039916c0604cc70f16b6393c57e8b7574",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "ce7d336039916c0604cc70f16b6393c57e8b7574"
+                },
+                "time": "2021-05-07T12:22:47+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/2.0.3"
+                }
+            },
+            {
+                "version": "2.0.2",
+                "version_normalized": "2.0.2.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "12f5666e456308c4ff6f90e4db1c43bebab7f6e7"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/12f5666e456308c4ff6f90e4db1c43bebab7f6e7",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "12f5666e456308c4ff6f90e4db1c43bebab7f6e7"
+                },
+                "time": "2021-05-07T11:58:03+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/2.0.2"
+                }
+            },
+            {
+                "version": "2.0.1",
+                "version_normalized": "2.0.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "26abacff37acc5cd91dae01d10e4fafcc94f3b1e"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/26abacff37acc5cd91dae01d10e4fafcc94f3b1e",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "26abacff37acc5cd91dae01d10e4fafcc94f3b1e"
+                },
+                "time": "2021-05-07T11:51:55+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/2.0.1"
+                }
+            },
+            {
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "bcd4255846a9e02fa064446bda14c3366501c229"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/bcd4255846a9e02fa064446bda14c3366501c229",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "bcd4255846a9e02fa064446bda14c3366501c229"
+                },
+                "time": "2021-05-07T11:29:20+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/2.0.0"
+                }
+            },
+            {
+                "keywords": [
+                    "JustSteveKing",
+                    "companies-house-laravel"
+                ],
+                "version": "1.3.0",
+                "version_normalized": "1.3.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "012165f5ea85a4cfe56c3552e3c9e98c901f6c96"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/012165f5ea85a4cfe56c3552e3c9e98c901f6c96",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "012165f5ea85a4cfe56c3552e3c9e98c901f6c96"
+                },
+                "time": "2021-05-06T10:39:31+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\CompaniesHouseLaravel\\": "src"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\CompaniesHouseLaravel\\CompaniesHouseLaravelServiceProvider"
+                        ],
+                        "aliases": {
+                            "ClientFacade": "JustSteveKing\\CompaniesHouseLaravel\\ClientFacade"
+                        }
+                    }
+                },
+                "require": {
+                    "php": "^7.4|^8.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^2.16",
+                    "guzzlehttp/guzzle": "^7.0",
+                    "orchestra/testbench": "^6.0",
+                    "phpunit/phpunit": "^9.3",
+                    "vimeo/psalm": "^3.11"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/1.3.0"
+                }
+            },
+            {
+                "version": "v1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "73d32dc6048751adea5d843291d19e6b74bc38c8"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/73d32dc6048751adea5d843291d19e6b74bc38c8",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "73d32dc6048751adea5d843291d19e6b74bc38c8"
+                },
+                "time": "2020-09-21T13:45:48+00:00",
+                "require": {
+                    "php": "^7.4"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/v1.2.0"
+                },
+                "funding": "__unset"
+            },
+            {
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "b581dcfede749b2d8a1a4925951e7f830f7eee78"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/b581dcfede749b2d8a1a4925951e7f830f7eee78",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "b581dcfede749b2d8a1a4925951e7f830f7eee78"
+                },
+                "time": "2020-09-17T13:33:03+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/v1.1.0"
+                }
+            },
+            {
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/companies-house-laravel.git",
+                    "type": "git",
+                    "reference": "0c6efd76e51c6511e4261fad6d8f1e68552bb3d0"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/companies-house-laravel/zipball/0c6efd76e51c6511e4261fad6d8f1e68552bb3d0",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "0c6efd76e51c6511e4261fad6d8f1e68552bb3d0"
+                },
+                "time": "2020-09-16T14:00:19+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/companies-house-laravel/issues",
+                    "source": "https://github.com/JustSteveKing/companies-house-laravel/tree/v1.0.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

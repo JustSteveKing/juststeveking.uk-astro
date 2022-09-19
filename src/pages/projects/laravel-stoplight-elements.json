@@ -1,0 +1,186 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-stoplight-elements": [
+            {
+                "name": "juststeveking/laravel-stoplight-elements",
+                "description": "A simple API documentation package for Laravel using OpenAPI and Stoplight Elements",
+                "keywords": [
+                    "documentation",
+                    "api",
+                    "laravel",
+                    "openapi",
+                    "stoplight",
+                    "stoplight elements"
+                ],
+                "homepage": "",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stoplight-elements.git",
+                    "type": "git",
+                    "reference": "e305593f090f730a545bea34506c92813d640bfb"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stoplight-elements/zipball/e305593f090f730a545bea34506c92813d640bfb",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "e305593f090f730a545bea34506c92813d640bfb"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2022-02-14T08:04:36+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Laravel\\LaravelStoplight\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\Laravel\\LaravelStoplight\\StoplightServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^7.4|^8.0",
+                    "illuminate/support": "^8.0|^9.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^6.17",
+                    "phpunit/phpunit": "^9.5"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stoplight-elements/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stoplight-elements/tree/1.0.0"
+                }
+            },
+            {
+                "version": "0.0.5",
+                "version_normalized": "0.0.5.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stoplight-elements.git",
+                    "type": "git",
+                    "reference": "8eb0af7ba7d17b8a5e0c9bb39d18077483fbe899"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stoplight-elements/zipball/8eb0af7ba7d17b8a5e0c9bb39d18077483fbe899",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "8eb0af7ba7d17b8a5e0c9bb39d18077483fbe899"
+                },
+                "time": "2021-07-06T07:13:41+00:00",
+                "require": {
+                    "php": "^7.4|^8.0",
+                    "illuminate/support": "^8.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stoplight-elements/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stoplight-elements/tree/0.0.5"
+                }
+            },
+            {
+                "version": "0.0.4",
+                "version_normalized": "0.0.4.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stoplight-elements.git",
+                    "type": "git",
+                    "reference": "fdc9687bdbb1f63323849db3f53ca65483bbd803"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stoplight-elements/zipball/fdc9687bdbb1f63323849db3f53ca65483bbd803",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "fdc9687bdbb1f63323849db3f53ca65483bbd803"
+                },
+                "time": "2021-05-20T07:17:56+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stoplight-elements/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stoplight-elements/tree/0.0.4"
+                }
+            },
+            {
+                "version": "0.0.3",
+                "version_normalized": "0.0.3.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stoplight-elements.git",
+                    "type": "git",
+                    "reference": "15a5672ef779d09b12c56f48254c98ef66895f5d"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stoplight-elements/zipball/15a5672ef779d09b12c56f48254c98ef66895f5d",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "15a5672ef779d09b12c56f48254c98ef66895f5d"
+                },
+                "time": "2021-05-18T20:20:52+00:00",
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/support": "^8.0"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stoplight-elements/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stoplight-elements/tree/0.0.3"
+                }
+            },
+            {
+                "version": "0.0.2",
+                "version_normalized": "0.0.2.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stoplight-elements.git",
+                    "type": "git",
+                    "reference": "1e7d27e243b720a621ae8f2f1e209a9b1f510824"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stoplight-elements/zipball/1e7d27e243b720a621ae8f2f1e209a9b1f510824",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "1e7d27e243b720a621ae8f2f1e209a9b1f510824"
+                },
+                "time": "2021-05-06T09:38:19+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stoplight-elements/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stoplight-elements/tree/0.0.2"
+                }
+            },
+            {
+                "version": "0.0.1",
+                "version_normalized": "0.0.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stoplight-elements.git",
+                    "type": "git",
+                    "reference": "bb5c549ded2f7e9548c26c9891a391c256164e73"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stoplight-elements/zipball/bb5c549ded2f7e9548c26c9891a391c256164e73",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "bb5c549ded2f7e9548c26c9891a391c256164e73"
+                },
+                "time": "2021-05-06T09:05:42+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stoplight-elements/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stoplight-elements/tree/0.0.1"
+                },
+                "require-dev": "__unset"
+            }
+        ]
+    },
+    "security-advisories": []
+}

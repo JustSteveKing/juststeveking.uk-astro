@@ -1,0 +1,330 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/uri-builder": [
+            {
+                "name": "juststeveking/uri-builder",
+                "description": "A simple URI builder in PHP that is slightly opinionated",
+                "keywords": [],
+                "homepage": "",
+                "version": "3.0.0",
+                "version_normalized": "3.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "506e7e4310ded921ccdfc2768b56bdbcc1cd121b"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/506e7e4310ded921ccdfc2768b56bdbcc1cd121b",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "506e7e4310ded921ccdfc2768b56bdbcc1cd121b"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2022-07-15T11:40:14+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\UriBuilder\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^8.1",
+                    "juststeveking/parameterbag": "^2.0"
+                },
+                "require-dev": {
+                    "roave/security-advisories": "dev-latest",
+                    "pestphp/pest": "^1.8",
+                    "phpstan/phpstan": "^1.8",
+                    "laravel/pint": "^0.2.3",
+                    "thecodingmachine/phpstan-safe-rule": "^1.2"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/3.0.0"
+                }
+            },
+            {
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "278ba4d0705bee4a4193484f5659e3f373831ebf"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/278ba4d0705bee4a4193484f5659e3f373831ebf",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "278ba4d0705bee4a4193484f5659e3f373831ebf"
+                },
+                "time": "2021-07-08T20:56:19+00:00",
+                "require": {
+                    "php": "^8.0",
+                    "juststeveking/parameterbag": "^2.0"
+                },
+                "require-dev": {
+                    "roave/security-advisories": "dev-latest",
+                    "pestphp/pest": "^1.8",
+                    "vimeo/psalm": "^4.8"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/2.0.0"
+                }
+            },
+            {
+                "version": "v1.1.0",
+                "version_normalized": "1.1.0.0",
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "9f5c1e18840e10ed951102558ca63f4e6f7e0444"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/9f5c1e18840e10ed951102558ca63f4e6f7e0444",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "9f5c1e18840e10ed951102558ca63f4e6f7e0444"
+                },
+                "time": "2020-10-30T11:07:50+00:00",
+                "require": {
+                    "php": "^7.4|^8.0",
+                    "juststeveking/parameterbag": "^1.2.0"
+                },
+                "require-dev": {
+                    "symfony/var-dumper": "^5.1",
+                    "phpunit/phpunit": "^9.4",
+                    "phpstan/phpstan": "^0.12.48",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "thecodingmachine/phpstan-safe-rule": "^1.0",
+                    "roave/security-advisories": "dev-latest"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.1.0"
+                }
+            },
+            {
+                "version": "v1.0.6",
+                "version_normalized": "1.0.6.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "1ab7b5fc09def79ecd6c91a63e797c8d1f9fca41"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/1ab7b5fc09def79ecd6c91a63e797c8d1f9fca41",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "1ab7b5fc09def79ecd6c91a63e797c8d1f9fca41"
+                },
+                "time": "2020-10-19T12:37:25+00:00",
+                "require": {
+                    "php": "^7.4",
+                    "juststeveking/parameterbag": "^1.1"
+                },
+                "require-dev": {
+                    "symfony/var-dumper": "^5.1",
+                    "vimeo/psalm": "^3.16",
+                    "phpunit/phpunit": "^9.4",
+                    "phpstan/phpstan": "^0.12.48",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "thecodingmachine/phpstan-safe-rule": "^1.0",
+                    "roave/security-advisories": "dev-latest"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.0.6"
+                },
+                "funding": "__unset"
+            },
+            {
+                "version": "v1.0.5",
+                "version_normalized": "1.0.5.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "73fb8feda97d88575bbb0ba89fe2abc0fb6211ae"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/73fb8feda97d88575bbb0ba89fe2abc0fb6211ae",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "73fb8feda97d88575bbb0ba89fe2abc0fb6211ae"
+                },
+                "time": "2020-10-19T10:27:29+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.0.5"
+                }
+            },
+            {
+                "version": "v1.0.4",
+                "version_normalized": "1.0.4.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "496765a03052a725c0c1886c01f75d38d128cd73"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/496765a03052a725c0c1886c01f75d38d128cd73",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "496765a03052a725c0c1886c01f75d38d128cd73"
+                },
+                "time": "2020-10-12T20:52:23+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.0.4"
+                }
+            },
+            {
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "5427f40454f63afb02d3d0d96693e2bf40bc2fa0"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/5427f40454f63afb02d3d0d96693e2bf40bc2fa0",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "5427f40454f63afb02d3d0d96693e2bf40bc2fa0"
+                },
+                "time": "2020-10-12T10:16:29+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.0.3"
+                }
+            },
+            {
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "a311e10cedd37881985519af75ccc2396b1029ae"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/a311e10cedd37881985519af75ccc2396b1029ae",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "a311e10cedd37881985519af75ccc2396b1029ae"
+                },
+                "time": "2020-10-12T10:08:26+00:00",
+                "require": {
+                    "juststeveking/parameterbag": "^1.1"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.0.2"
+                }
+            },
+            {
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "1088b7738a9669b21acae6d0c87850f438e29972"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/1088b7738a9669b21acae6d0c87850f438e29972",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "1088b7738a9669b21acae6d0c87850f438e29972"
+                },
+                "time": "2020-10-12T09:54:18+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.0.1"
+                }
+            },
+            {
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "3e90bda72f2c8651cf103ee47600dc8f0ee96193"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/3e90bda72f2c8651cf103ee47600dc8f0ee96193",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "3e90bda72f2c8651cf103ee47600dc8f0ee96193"
+                },
+                "time": "2020-10-12T09:37:52+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v1.0.0"
+                }
+            },
+            {
+                "version": "v0.9.1",
+                "version_normalized": "0.9.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "a74edb195b24d16dbb8b453f1e179911dce95eb5"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/a74edb195b24d16dbb8b453f1e179911dce95eb5",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "a74edb195b24d16dbb8b453f1e179911dce95eb5"
+                },
+                "time": "2020-10-12T08:25:56+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v0.9.1"
+                }
+            },
+            {
+                "version": "v0.9.0",
+                "version_normalized": "0.9.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/uri-builder.git",
+                    "type": "git",
+                    "reference": "c97a57767467c329559d7a17055a9d0081ee850f"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/uri-builder/zipball/c97a57767467c329559d7a17055a9d0081ee850f",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "c97a57767467c329559d7a17055a9d0081ee850f"
+                },
+                "time": "2020-10-11T21:28:54+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/uri-builder/issues",
+                    "source": "https://github.com/JustSteveKing/uri-builder/tree/v0.9.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

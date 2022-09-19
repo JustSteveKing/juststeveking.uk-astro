@@ -1,0 +1,113 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-stubs": [
+            {
+                "name": "juststeveking/laravel-stubs",
+                "description": "An opinionated version of the Laravel stubs",
+                "keywords": [],
+                "homepage": "",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stubs.git",
+                    "type": "git",
+                    "reference": "67a69dbb01fd2db3dbccfdfd07f2992989297cea"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stubs/zipball/67a69dbb01fd2db3dbccfdfd07f2992989297cea",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "67a69dbb01fd2db3dbccfdfd07f2992989297cea"
+                },
+                "type": "library",
+                "funding": [
+                    {
+                        "url": "https://github.com/JustSteveKing",
+                        "type": "github"
+                    }
+                ],
+                "time": "2022-04-22T08:27:42+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Stubs\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\Stubs\\StubsServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^8.1",
+                    "laravel/framework": "^8.8|^9.0"
+                },
+                "require-dev": {
+                    "friendsofphp/php-cs-fixer": "^3.8",
+                    "orchestra/testbench": "^7.4",
+                    "phpstan/phpstan": "^1.5",
+                    "phpunit/phpunit": "^9.5"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stubs/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stubs/tree/1.0.2"
+                }
+            },
+            {
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stubs.git",
+                    "type": "git",
+                    "reference": "190ba33dae006382f16c8c572e8bdccfdb759b05"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stubs/zipball/190ba33dae006382f16c8c572e8bdccfdb759b05",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "190ba33dae006382f16c8c572e8bdccfdb759b05"
+                },
+                "time": "2022-04-22T08:13:43+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stubs/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stubs/tree/1.0.1"
+                }
+            },
+            {
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-stubs.git",
+                    "type": "git",
+                    "reference": "f54dfabb6b6eed384e7ddd26bd118ccd8afc19d7"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-stubs/zipball/f54dfabb6b6eed384e7ddd26bd118ccd8afc19d7",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "f54dfabb6b6eed384e7ddd26bd118ccd8afc19d7"
+                },
+                "time": "2022-04-20T09:45:41+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-stubs/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-stubs/tree/1.0.0"
+                },
+                "extra": "__unset"
+            }
+        ]
+    },
+    "security-advisories": []
+}

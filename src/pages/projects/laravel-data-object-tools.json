@@ -1,0 +1,91 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-data-object-tools": [
+            {
+                "name": "juststeveking/laravel-data-object-tools",
+                "description": "A set of tools to make working with Data Transfer Objects easier in Laravel",
+                "keywords": [],
+                "homepage": "",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-data-object-tools.git",
+                    "type": "git",
+                    "reference": "3b7187fe5a66548684ee5acd160dacfc176bcc54"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-data-object-tools/zipball/3b7187fe5a66548684ee5acd160dacfc176bcc54",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "3b7187fe5a66548684ee5acd160dacfc176bcc54"
+                },
+                "type": "library",
+                "time": "2022-07-28T17:07:32+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\DataObjects\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\DataObjects\\Providers\\PackageServiceProvider"
+                        ],
+                        "aliases": [
+                            "JustSteveKing\\DataObjects\\Facades\\Hydrator"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^8.1",
+                    "eventsauce/object-hydrator": "^0.4.3",
+                    "illuminate/contracts": "^9.22",
+                    "illuminate/support": "^9.22"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.1",
+                    "orchestra/testbench": "^7.6",
+                    "pestphp/pest": "^1.21",
+                    "phpstan/phpstan": "^1.8"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-data-object-tools/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-data-object-tools/tree/1.0.1"
+                }
+            },
+            {
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-data-object-tools.git",
+                    "type": "git",
+                    "reference": "38cf17a28c0c3eb481145849fe7fa154e3000345"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-data-object-tools/zipball/38cf17a28c0c3eb481145849fe7fa154e3000345",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "38cf17a28c0c3eb481145849fe7fa154e3000345"
+                },
+                "time": "2022-07-28T12:23:13+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-data-object-tools/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-data-object-tools/tree/1.0.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

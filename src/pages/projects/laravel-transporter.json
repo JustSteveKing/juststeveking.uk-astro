@@ -1,0 +1,453 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/laravel-transporter": [
+            {
+                "name": "juststeveking/laravel-transporter",
+                "description": "Transporter is a futuristic way to send API requests in PHP. This is an OOP approach to handle API requests.",
+                "keywords": [
+                    "laravel",
+                    "transporter",
+                    "JustSteveKing"
+                ],
+                "homepage": "https://github.com/JustSteveKing/laravel-transporter",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Zuzana Kunckova",
+                        "email": "contact@zuzana-k.com",
+                        "homepage": "https://www.zuzana-k.com/",
+                        "role": "Developer"
+                    },
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "21a9af3c63ded494fff0e9446e6145c88ef44d94"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/21a9af3c63ded494fff0e9446e6145c88ef44d94",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "21a9af3c63ded494fff0e9446e6145c88ef44d94"
+                },
+                "type": "library",
+                "time": "2022-07-12T09:31:33+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\Transporter\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "JustSteveKing\\Transporter\\TransporterServiceProvider"
+                        ]
+                    }
+                },
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/contracts": "^8.37|^9.0",
+                    "juststeveking/http-status-code": "^2.0",
+                    "juststeveking/uri-builder": "^1.1",
+                    "spatie/laravel-package-tools": "^1.4.3"
+                },
+                "require-dev": {
+                    "brianium/paratest": "^6.2",
+                    "guzzlehttp/guzzle": "^7.3",
+                    "nunomaduro/collision": "^5.3",
+                    "orchestra/testbench": "^6.15",
+                    "pestphp/pest": "^1.20",
+                    "phpstan/phpstan": "^1.1",
+                    "phpunit/phpunit": "^9.3",
+                    "spatie/laravel-ray": "^1.9"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/1.1.0"
+                }
+            },
+            {
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "f5ba42be7690c9faf15bc4320bc22eea6b0be3d4"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/f5ba42be7690c9faf15bc4320bc22eea6b0be3d4",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "f5ba42be7690c9faf15bc4320bc22eea6b0be3d4"
+                },
+                "time": "2022-02-11T09:03:00+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/1.0.0"
+                }
+            },
+            {
+                "version": "0.9.6",
+                "version_normalized": "0.9.6.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "286be8cba0198dc2af6fd142e3f19903748563b9"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/286be8cba0198dc2af6fd142e3f19903748563b9",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "286be8cba0198dc2af6fd142e3f19903748563b9"
+                },
+                "time": "2022-01-18T08:28:20+00:00",
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/contracts": "^8.37",
+                    "juststeveking/http-status-code": "^2.0",
+                    "juststeveking/uri-builder": "^1.1",
+                    "spatie/laravel-package-tools": "^1.4.3"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.9.6"
+                }
+            },
+            {
+                "version": "0.9.5",
+                "version_normalized": "0.9.5.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "fba0df20c25c1a23286374a284a3e61839db7982"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/fba0df20c25c1a23286374a284a3e61839db7982",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "fba0df20c25c1a23286374a284a3e61839db7982"
+                },
+                "time": "2021-11-11T08:05:52+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.9.5"
+                }
+            },
+            {
+                "version": "0.9.4",
+                "version_normalized": "0.9.4.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "8a1e2fa4335c6448825450d65315b93d334522ac"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/8a1e2fa4335c6448825450d65315b93d334522ac",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "8a1e2fa4335c6448825450d65315b93d334522ac"
+                },
+                "time": "2021-11-03T08:26:39+00:00",
+                "require-dev": {
+                    "brianium/paratest": "^6.2",
+                    "guzzlehttp/guzzle": "^7.3",
+                    "nunomaduro/collision": "^5.3",
+                    "orchestra/testbench": "^6.15",
+                    "pestphp/pest": "^1.20",
+                    "phpunit/phpunit": "^9.3",
+                    "spatie/laravel-ray": "^1.9"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.9.4"
+                }
+            },
+            {
+                "version": "0.9.3",
+                "version_normalized": "0.9.3.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "abf22de9ce007bb3212b4df441900aae56ab4955"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/abf22de9ce007bb3212b4df441900aae56ab4955",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "abf22de9ce007bb3212b4df441900aae56ab4955"
+                },
+                "time": "2021-10-26T07:09:02+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.9.3"
+                }
+            },
+            {
+                "version": "0.9.2",
+                "version_normalized": "0.9.2.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "b9942d56ec2fce289071d265114901b8bc725dd1"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/b9942d56ec2fce289071d265114901b8bc725dd1",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "b9942d56ec2fce289071d265114901b8bc725dd1"
+                },
+                "time": "2021-10-21T07:34:07+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.9.2"
+                }
+            },
+            {
+                "version": "0.9.1",
+                "version_normalized": "0.9.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "27bd1aab4644c8a78b2ac8100f189203bc46ea51"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/27bd1aab4644c8a78b2ac8100f189203bc46ea51",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "27bd1aab4644c8a78b2ac8100f189203bc46ea51"
+                },
+                "time": "2021-10-05T10:01:43+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.9.1"
+                }
+            },
+            {
+                "version": "0.9.0",
+                "version_normalized": "0.9.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "c78b7e9ebb5b645140c1d61e13f2955e7317f92c"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/c78b7e9ebb5b645140c1d61e13f2955e7317f92c",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "c78b7e9ebb5b645140c1d61e13f2955e7317f92c"
+                },
+                "time": "2021-09-28T08:37:00+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.9.0"
+                }
+            },
+            {
+                "version": "0.8.0",
+                "version_normalized": "0.8.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "c28bbdb0d8a063b0f03846c6b6257edb5c7fd2d5"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/c28bbdb0d8a063b0f03846c6b6257edb5c7fd2d5",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "c28bbdb0d8a063b0f03846c6b6257edb5c7fd2d5"
+                },
+                "time": "2021-08-13T10:54:13+00:00",
+                "require": {
+                    "php": "^8.0",
+                    "illuminate/contracts": "^8.37",
+                    "juststeveking/uri-builder": "^1.1",
+                    "spatie/laravel-package-tools": "^1.4.3"
+                },
+                "require-dev": {
+                    "brianium/paratest": "^6.2",
+                    "guzzlehttp/guzzle": "^7.3",
+                    "nunomaduro/collision": "^5.3",
+                    "orchestra/testbench": "^6.15",
+                    "phpunit/phpunit": "^9.3",
+                    "spatie/laravel-ray": "^1.9"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.8.0"
+                }
+            },
+            {
+                "version": "0.7.1",
+                "version_normalized": "0.7.1.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "09ee9f8b18aa440516c95e3503705d8fd8202d22"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/09ee9f8b18aa440516c95e3503705d8fd8202d22",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "09ee9f8b18aa440516c95e3503705d8fd8202d22"
+                },
+                "time": "2021-07-12T09:38:02+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.7.1"
+                }
+            },
+            {
+                "version": "0.7.0",
+                "version_normalized": "0.7.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "017f8aca66b5b7f77e44ab7aa6f85905da5f7d6d"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/017f8aca66b5b7f77e44ab7aa6f85905da5f7d6d",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "017f8aca66b5b7f77e44ab7aa6f85905da5f7d6d"
+                },
+                "time": "2021-07-08T11:35:45+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.7.0"
+                }
+            },
+            {
+                "version": "0.6.0",
+                "version_normalized": "0.6.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "ea2c803b1fe760f855854c0ebd931b9cf594df56"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/ea2c803b1fe760f855854c0ebd931b9cf594df56",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "ea2c803b1fe760f855854c0ebd931b9cf594df56"
+                },
+                "time": "2021-06-28T07:21:56+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.6.0"
+                }
+            },
+            {
+                "version": "0.5.0",
+                "version_normalized": "0.5.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "0cd3e9b6ed5c184fe6152a07642f3d4405a5d328"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/0cd3e9b6ed5c184fe6152a07642f3d4405a5d328",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "0cd3e9b6ed5c184fe6152a07642f3d4405a5d328"
+                },
+                "time": "2021-06-23T07:33:14+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.5.0"
+                }
+            },
+            {
+                "version": "0.4.0",
+                "version_normalized": "0.4.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "ad752ebd0734c2867455cc4daa686d48953224e2"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/ad752ebd0734c2867455cc4daa686d48953224e2",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "ad752ebd0734c2867455cc4daa686d48953224e2"
+                },
+                "time": "2021-05-28T21:30:28+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.4.0"
+                }
+            },
+            {
+                "version": "0.3.0",
+                "version_normalized": "0.3.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "72d61518375e24ba2eb00db0292639323de7b648"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/72d61518375e24ba2eb00db0292639323de7b648",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "72d61518375e24ba2eb00db0292639323de7b648"
+                },
+                "time": "2021-05-28T10:34:36+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.3.0"
+                }
+            },
+            {
+                "version": "0.2.0",
+                "version_normalized": "0.2.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "bba829a2d1ab9627995ff6ffc3f90ccf12d8e473"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/bba829a2d1ab9627995ff6ffc3f90ccf12d8e473",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "bba829a2d1ab9627995ff6ffc3f90ccf12d8e473"
+                },
+                "time": "2021-05-27T20:44:19+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.2.0"
+                }
+            },
+            {
+                "version": "0.1.0",
+                "version_normalized": "0.1.0.0",
+                "source": {
+                    "url": "https://github.com/JustSteveKing/laravel-transporter.git",
+                    "type": "git",
+                    "reference": "cae059f49214f584f31ebce0c7169d349ce67c30"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/laravel-transporter/zipball/cae059f49214f584f31ebce0c7169d349ce67c30",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "cae059f49214f584f31ebce0c7169d349ce67c30"
+                },
+                "time": "2021-05-27T20:39:15+00:00",
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/laravel-transporter/issues",
+                    "source": "https://github.com/JustSteveKing/laravel-transporter/tree/0.1.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}

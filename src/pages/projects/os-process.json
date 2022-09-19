@@ -1,0 +1,58 @@
+{
+    "minified": "composer/2.0",
+    "packages": {
+        "juststeveking/os-process": [
+            {
+                "name": "juststeveking/os-process",
+                "description": "A PHP Package to work with OS processes in an OOP way.",
+                "keywords": [],
+                "homepage": "",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steve McDougall",
+                        "email": "juststevemcd@gmail.com",
+                        "homepage": "https://www.juststeveking.uk/",
+                        "role": "Developer"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/JustSteveKing/os-process.git",
+                    "type": "git",
+                    "reference": "0230122d5e59c6a57a1238fa01f196c567a94313"
+                },
+                "dist": {
+                    "url": "https://api.github.com/repos/JustSteveKing/os-process/zipball/0230122d5e59c6a57a1238fa01f196c567a94313",
+                    "type": "zip",
+                    "shasum": "",
+                    "reference": "0230122d5e59c6a57a1238fa01f196c567a94313"
+                },
+                "type": "library",
+                "time": "2022-08-25T09:30:49+00:00",
+                "autoload": {
+                    "psr-4": {
+                        "JustSteveKing\\OS\\": "src/"
+                    }
+                },
+                "require": {
+                    "php": "^8.1",
+                    "symfony/process": "^6.1"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.1",
+                    "pestphp/pest": "^1.21",
+                    "phpstan/phpstan": "^1.8"
+                },
+                "support": {
+                    "issues": "https://github.com/JustSteveKing/os-process/issues",
+                    "source": "https://github.com/JustSteveKing/os-process/tree/1.0.0"
+                }
+            }
+        ]
+    },
+    "security-advisories": []
+}
