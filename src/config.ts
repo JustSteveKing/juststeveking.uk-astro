@@ -1,6 +1,6 @@
 // Site General
 export const SITE_TITLE = 'JustSteveKing';
-export const SITE_DESCRIPTION = 'Consultant CTO, Software Engineer, Educator, Technical Writer, Community Advocate';
+export const SITE_DESCRIPTION = 'Consultant, Software Engineer, Technical Writer, and Community Advocate';
 export const SITE_URL = 'https://www.juststeveking.uk/';
 
 export const TWITTER_HANDLE = '@JustSteveKing';

@@ -17,7 +17,7 @@ const talks = (await Astro.glob('./speaking/*.{md,mdx}')).sort(
                         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                             I’ve spoken at events all around the world and been interviewed for many podcasts.
                         </h1>
-                        <p class="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
+                        <p class="mt-6 text-lg text-zinc-600 dark:text-zinc-300">
                             One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions.
                         </p>
                     </header>
@@ -45,13 +45,13 @@ const talks = (await Astro.glob('./speaking/*.{md,mdx}')).sort(
                                                             </span>
                                                         </Link>
                                                     </h3>
-                                                    <p class="relative z-10 order-first mb-3 flex items-center text-md text-zinc-500 pl-3.5">
+                                                    <p class="relative z-10 order-first mb-3 flex items-center text-md text-zinc-600 dark:text-zinc-300 pl-3.5">
                                                         <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
                                                             <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                                                         </span>
                                                         {talk.frontmatter.event}
                                                     </p>
-                                                    <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-400">
+                                                    <p class="relative z-10 mt-2 text-md text-zinc-600 dark:text-zinc-300">
                                                         {talk.frontmatter.description}
                                                     </p>
                                                     <Link
