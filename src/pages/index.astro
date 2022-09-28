@@ -104,54 +104,84 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
     <div class="mt-16 sm:mt-20">
         <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={docker}
-                    width={640}
-                    height={427}
-                    alt="Docker logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="Docker"
+                    link="https://www.docker.com/"
+                >
+                    <Image
+                        src={docker}
+                        width={640}
+                        height={427}
+                        alt="Docker logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+            </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={livewire}
-                    width={640}
-                    height={427}
-                    alt="Laravel Livewire logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="Laravel Livewire"
+                    link="https://laravel-livewire.com/"
+                >
+                    <Image
+                        src={livewire}
+                        width={640}
+                        height={427}
+                        alt="Laravel Livewire logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={laravel}
-                    width={640}
-                    height={427}
-                    alt="Laravel logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="The Laravel Framework"
+                    link="https://laravel.com/"
+                >
+                    <Image
+                        src={laravel}
+                        width={640}
+                        height={427}
+                        alt="Laravel logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={php}
-                    width={640}
-                    height={427}
-                    alt="PHP logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="PHP Programming Language"
+                    link="https://www.php.net/"
+                >
+                    <Image
+                        src={php}
+                        width={640}
+                        height={427}
+                        alt="PHP logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={go}
-                    width={640}
-                    height={427}
-                    alt="Go logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="Go Programming Language"
+                    link="https://go.dev/"
+                >
+                    <Image
+                        src={go}
+                        width={640}
+                        height={427}
+                        alt="Go logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
         </div>
     </div>
