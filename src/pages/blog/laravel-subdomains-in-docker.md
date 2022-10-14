@@ -55,7 +55,7 @@ Let's also have a look at the other parts we need aside from the docker-compose 
 
 The nginx Dockerfile should be created under: `docker/nginx/Dockerfile` and contain the following:
 
-```Dockerfile
+```docker
 # Offical Docker Image for Nginx
 # https://hub.docker.com/_/nginx
 FROM nginx:alpine
@@ -120,7 +120,7 @@ http {
 
 Our sites configuration should be be: `docker/nginx/conf.g/site.conf` and contain the following:
 
-```conf
+```nginx
 server {
 
    #listen 80;
@@ -168,7 +168,7 @@ server {
 
 Finally we will need to have our SSL configuration created under: `docker/nginx/ssl/openssl.cnf` and contain the following:
 
-```cnf
+```bash
 [req]
 default_bits           = 2048
 default_md             = sha256
@@ -247,7 +247,7 @@ Again, like our nginx service, we use the Project Name env variable to set the c
 
 We have a few additional configuration files to add to our app service, so inside `docker/php` we will need to create a `Dockerfile` and add the following to it:
 
-```Dockerfile
+```docker
 # Offical Docker Image for PHP
 # https://hub.docker.com/_/php
 FROM php:8.1-fpm
@@ -489,7 +489,7 @@ volumes:
 
 Finally what I like to do with every docker project, is create a makefile - it allows me to have easier and more convienient commands to access what I need when I need it, you do not need to do this yourself but I will include the file here:
 
-```Makefile
+```make
 .RECIPEPREFIX +=
 .DEFAULT_GOAL := help
 PROJECT_NAME=jump

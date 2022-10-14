@@ -518,7 +518,7 @@ composer require --dev phpstan/phpstan
 
 To configure PHPStan, we will need to create a `phpstan.neon` in the root of our package to know the configuration being used.
 
-```neon
+```yaml
 parameters:
     level: 9
 

@@ -64,7 +64,7 @@ composer require meilisearch/meilisearch-php
 
 So the Laravel documentation says you also need to install `http-interop/http-factory-guzzle` however if you look at the meilisearch-php library this is now included as part of that dependency. So we can skip this, or install it if it makes you more comfortable. Our next step is to set some ENV variables inside of our `.env` file:
 
-```env
+```bash
 SCOUT_DRIVER=meilisearch
 MEILISEARCH_HOST=http://127.0.0.1:7700
 MEILISEARCH_KEY=masterKey

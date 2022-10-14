@@ -30,7 +30,7 @@ composer require nunomaduro/larastan --dev
 
 Once we have this dependency installed as a dev dependency, we can set up the configuration. The reason we want this as a dev dependency is because in production we should never be running any static analysis - it is for development purposes only to ensure your code is as type safe as possible. PHPStan uses a configuration format called `neon`, which is similar to yaml in a way. So we will create a new file in the root directory of out application called `./phpstan.neon` - if you are building a package, the recommended approach is to add `.dist` to the end of these configuration files, but for local app development this is fine. Inside this file we will start to define the configuration we need for phpstan to run and what rules we might want to impose, add the following code to the config file and we can walk through what it means:
 
-```neon
+```yaml
 includes:
     - ./vendor/nunomaduro/larastan/extension.neon
 parameters:
@@ -274,7 +274,7 @@ Note: Using configuration file /Users/steve/code/sites/larastan-test/phpstan.neo
 
 The first thing standing out to me is the `Method App\Models\User::bookmarks() return type with generic class` error, now I don’t want to have a huge reliance on generics for this application. The error actually tells us what we can do, so let’s add `checkGenericClassInNonGenericObjectType: false` to our `phpstan.neon` file:
 
-```neon
+```yaml
 includes:
     - ./vendor/nunomaduro/larastan/extension.neon
 parameters:

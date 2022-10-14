@@ -38,7 +38,7 @@ class MedicalTrustService
 
 So we will want 2 things for this API, a base URL and an API token - nothing out of the ordinary. Inside `config/services.php` add the following block:
 
-```PHP
+```php
 return [
 	'medical-trust' => [
 		'url' => env('MEDICAL_TRUST_URL'),
@@ -237,7 +237,7 @@ As you can see, this is relatively straightforward. We pass an identifier to ide
 
 Before completely removing arrays, we need to understand how the data is displayed and what creates this data. Let's look at an example payload for the dental records:
 
-```JSON
+```json
   {
   "id": "1234-1234-1234-1234",
   "treatments": {
@@ -261,7 +261,7 @@ Before completely removing arrays, we need to understand how the data is display
 
 So we have an identifier for the patient, then a treatment object. The treatment object has crowns and fillings the patient has received. In reality, this would be much bigger and contain much more information. The crown and filling are an array of dental fixes that have been applied - the material used, which tooth using dental jargon, and the date the treatment was implemented. Now let's first look at this in an array format:
 
-```PHP
+```php
 [
 'id' => '1234-1234-1234-1234',
 'treatment' => [
@@ -470,7 +470,7 @@ class CrownsFactory
 
 Or we could even make it even easier for us to use by telling the DentalTreatment Factory to create a collection for us:
 
-```PHP
+```php
 declare(strict_types=1);
 
 namespace App\Services\MedicalTrust\DataFactories;
@@ -510,7 +510,7 @@ class DentalTreatmentFactory
 
 This would allow us to simplify the Crowns factory that much further:
 
-```PHP
+```php
 declare(strict_types=1);
 
 namespace App\Services\MedicalTrust\DataFactories;
@@ -535,7 +535,7 @@ The story here is that the limit is on what makes your life easier. Perhaps you 
 
 Stepping back, we also want to be able to create new treatments through the API. We want to be able to fill in a form - or something similar and post the data off to the API to register that we have implemented a new treatment. To do this, we need to send a post request through our `DentalResource` using the `addRecord` method. This isn't terrible, but let's have a look at the example payload that we might use to send in a PHP array:
 
-```PHP
+```php
 [
 	'type' => 'crown',
 	'material' => 'porcelain',
@@ -648,7 +648,7 @@ class StoreController
 
 This isn't terrible, right? It is pretty reasonable. We can validate the payload coming from the form using a form request and pass the validated data to the resource to add a new record. But there is nothing we can do about business logic; we rely only on HTTP validation here. Let's have a look at what we can do with objects:
 
-```PHP
+```php
 declare(strict_types=1);
 
 namespace App\Http\Controllers\Dental\Crowns;
@@ -680,7 +680,7 @@ class StoreController
 
 So we are now using objects instead of arrays, but what about business logic? Yes, we are doing some HTTP validation that can catch some stuff - but what else could we do? Let's look at how we validate an array:
 
-```PHP
+```php
 declare(strict_types=1);
 
 namespace App\Http\Controllers\Dental\Crowns;
@@ -758,7 +758,7 @@ class StoreController
 
 This time we are using a factory to create the object from the validated data - the HTTP valid data. At this point, we have passed the web validation. Now we can move on to the business validation. So we create the object and then call validate on it, which is a new method that we need to add:
 
-```PHP
+```php
 declare(strict_types=1);
 
 namespace App\Services\MedicalTrust\Requests;

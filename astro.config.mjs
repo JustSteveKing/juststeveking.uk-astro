@@ -26,7 +26,7 @@ export default defineConfig({
       name: SITE_TITLE,
       description: SITE_DESCRIPTION,
       start_url: '/',
-      icon: 'https://juststeveking-uk-astro.pages.dev/favicon.svg',
+      icon: 'public/favicon.svg',
       display: 'standalone',
       theme_color: '#2dd4bf',
       background_color: '#fafafa'
