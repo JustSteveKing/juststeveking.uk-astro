@@ -12,7 +12,7 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://juststeveking-uk-astro.pages.dev/',
+  site: 'https://juststeveking.uk/',
   integrations: [
     mdx(),
     sitemap(),
