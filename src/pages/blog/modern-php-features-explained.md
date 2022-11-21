@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: Modern PHP features explained - PHP 8.0 and 8.1
-pubDate: 2022-10-21T14:27:16.845Z
+pubDate: 2022-10-27T14:27:16.845Z
 description: >-
     Since its release, PHP 8 has been a game changer. In this tutorial, let's walk through all the latest features with real-world examples of when to use them.
 social_image: https://laravelnews.s3.amazonaws.com/images/modern-php-features.png
