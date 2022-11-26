@@ -28,7 +28,7 @@ To get started all you need to do is install it, theres no configuration require
 
 Then, let's take an example API request:
 
-```http
+```bash
 GET https://jsonplaceholder.typicode.com/todos?completed=true HTTP/1.1
 ```
 

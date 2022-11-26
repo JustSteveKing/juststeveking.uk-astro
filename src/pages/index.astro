@@ -104,54 +104,84 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
     <div class="mt-16 sm:mt-20">
         <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={docker}
-                    width={640}
-                    height={427}
-                    alt="Docker logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="Docker"
+                    link="https://www.docker.com/"
+                >
+                    <Image
+                        src={docker}
+                        width={640}
+                        height={427}
+                        alt="Docker logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+            </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={livewire}
-                    width={640}
-                    height={427}
-                    alt="Laravel Livewire logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="Laravel Livewire"
+                    link="https://laravel-livewire.com/"
+                >
+                    <Image
+                        src={livewire}
+                        width={640}
+                        height={427}
+                        alt="Laravel Livewire logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={laravel}
-                    width={640}
-                    height={427}
-                    alt="Laravel logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="The Laravel Framework"
+                    link="https://laravel.com/"
+                >
+                    <Image
+                        src={laravel}
+                        width={640}
+                        height={427}
+                        alt="Laravel logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={php}
-                    width={640}
-                    height={427}
-                    alt="PHP logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="PHP Programming Language"
+                    link="https://www.php.net/"
+                >
+                    <Image
+                        src={php}
+                        width={640}
+                        height={427}
+                        alt="PHP logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
             <div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2 hover:shadow-lg hover:skew-y-3 hover:hue-rotate-60 hover:contrast-75">
-                <Image
-                    src={go}
-                    width={640}
-                    height={427}
-                    alt="Go logo"
-                    format="webp"
-                    class="absolute inset-0 h-full w-full object-cover"
-                />
+                <Link
+                    style="group -m-1 p-1"
+                    title="Go Programming Language"
+                    link="https://go.dev/"
+                >
+                    <Image
+                        src={go}
+                        width={640}
+                        height={427}
+                        alt="Go logo"
+                        format="webp"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </Link>
             </div>
         </div>
     </div>
@@ -169,26 +199,12 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                     <h2 class="text-lg font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                                         <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                                         
-                                        {post.frontmatter.partner
-                                            ?
-                                                <Link
-                                                    link={post.frontmatter.source}
-                                                    title={post.frontmatter.title}
-                                                    style="text-lg group-hover:text-teal-500"
-                                                >
-                                                    <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                                    <span class="relative z-10">
-                                                        {post.frontmatter.title}
-                                                    </span>
-                                                </Link>
-                                            :
-                                                <a href={post.frontmatter.url}>
-                                                    <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                                                    <span class="relative z-10 text-lg group-hover:text-teal-500">
-                                                        {post.frontmatter.title}
-                                                    </span>
-                                                </a>
-                                        }
+                                        <a href={post.url} class="cursor-pointer">
+                                            <span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                                            <span class="relative z-10 text-lg group-hover:text-teal-500">
+                                                {post.frontmatter.title}
+                                            </span>
+                                        </a>
                                     </h2>
                                     <time class="relative z-10 order-first mb-3 flex items-center text-md text-zinc-800 dark:text-zinc-100 pl-3.5" datetime={post.frontmatter.pubDate}>
                                         <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
@@ -196,7 +212,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                         </span>
                                         {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
                                             year: 'numeric',
-                                            month: 'short',
+                                            month: 'long',
                                             day: 'numeric',
                                         })}
                                     </time>
@@ -204,7 +220,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                                         { post.frontmatter.description}
                                     </p>
                                     <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-md font-medium text-teal-500">
-                                        {post.frontmatter.partner ? 'Read article on Laravel News' : 'Read article' }
+                                        {post.frontmatter.partner ? 'Read Laravel News article' : 'Read article' }
                                         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                                             <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>

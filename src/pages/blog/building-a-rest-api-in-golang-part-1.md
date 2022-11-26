@@ -24,7 +24,7 @@ This post will walk through an approach I have taken to build a REST API in GoLa
 
 My first step in any API build, is to create a Docker container to run my API on. I love docker for many reasons, but that is another blog post. When building docker containers I tend to stick to the rule of one service per container - meaning if you have a cache layer, database layer, and an application layer you should have 3 containers running together. Here is the base **Dockerfile** that I use for my GoLang service:
 
-```dockerfile
+```docker
 # Create our container from a very lightweight image
 FROM golang:alpine
 

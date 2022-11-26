@@ -3,6 +3,7 @@ export interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	source?: string;
 }
 
 import {
@@ -13,6 +14,7 @@ const {
 	title,
 	description,
 	image = '/images/open-graph-card.png',
+	source = 'https://www.juststeveking.uk/',
 } = Astro.props;
 ---
 
@@ -46,7 +48,7 @@ const {
 <link rel="alternate" type="application/rss+xml" href={`${Astro.site}rss.xml`} />
 
 <!-- Site Manifest -->
-<link rel="canonical" href="https://www.juststeveking.uk/">
+<link rel="canonical" href={source}>
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/favicon.png">
 <meta name="theme-color" content="#2dd4bf">

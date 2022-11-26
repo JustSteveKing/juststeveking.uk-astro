@@ -25,6 +25,10 @@ import {
     WORK_TWITTER,
 WORK_DESCRIPTION,
 } from '../config';
+
+const {
+	source
+} = Astro.props;
 ---
 
 <html lang="en" class="h-full antialiased">
@@ -32,6 +36,7 @@ WORK_DESCRIPTION,
 		<BaseHead
             title={SITE_TITLE}
             description={SITE_DESCRIPTION}
+            source={source}
         />
 
         <script type="module">
