@@ -245,3 +245,7 @@ Generator::generateSecure(); // fly1ng-f1sh-sw1mm1ng-l1z4rd
 
 I have created a package that delivers this code above, which has a little more code should you wish to dive into the example a little more. You can find the repository for this here: https://github.com/JustSteveKing/password-generator
 
+<<<<<<< HEAD
+**Disclaimer**. This is not intended for use in a production environment to create your passwords. My use case for this is to actually generate one off use codes such as One Time Pass Codes. This is not the most secure as the list of words is quite small, and will leave you open to a potential dictionary attack.
+=======
+>>>>>>> 1b08919c7b4bc5351dbc85378632494e45a05e37
