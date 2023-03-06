@@ -6,15 +6,15 @@ export const SITE_URL = 'https://www.juststeveking.uk/';
 export const TWITTER_HANDLE = '@JustSteveKing';
 
 // WORK INFO
-export const WORK_TITLE = 'Senior Engineering Manager';
-export const WORK_PLACE = 'Geomiq';
-export const WORK_URL = 'https://www.geomiq.com/';
-export const WORK_DESCRIPTION = "the UK’s leading digital manufacturing marketplace, which is an on-demand manufacturing solution";
-export const WORK_FOUNDED = '2016-08-09';
-export const WORK_LINKEDIN = 'https://www.linkedin.com/company/geomiq/';
-export const WORK_INSTAGRAM = 'https://www.instagram.com/geomiq_platform/';
-export const WORK_TWITTER = 'https://twitter.com/geomiq_official/';
-export const WORK_FACEBOOK = 'https://www.facebook.com/geomiq/';
+export const WORK_TITLE = 'Developer Advocate';
+export const WORK_PLACE = 'Treblle';
+export const WORK_URL = 'https://www.treblle.com/';
+export const WORK_DESCRIPTION = "a lightweight SDK that helps Engineering and DevOps teams build, ship & maintain REST based APIs faster.";
+export const WORK_FOUNDED = '2021-04-28';
+export const WORK_LINKEDIN = 'https://www.linkedin.com/company/treblle/';
+export const WORK_INSTAGRAM = 'https://www.instagram.com/treblleapis/';
+export const WORK_TWITTER = 'https://twitter.com/treblleapi';
+export const WORK_FACEBOOK = 'https://www.facebook.com/treblle';
 
 // Social Links
 export const LINK_YOUTUBE = 'https://www.youtube.com/c/JustSteveKing';
